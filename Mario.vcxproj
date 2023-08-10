@@ -145,6 +145,7 @@
     <ClInclude Include="Spikey.h" />
     <ClInclude Include="tileMap.h" />
     <ClInclude Include="Turtle.h" />
+    <ClInclude Include="Sound.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bonus.cpp" />
@@ -159,6 +160,7 @@
     <ClCompile Include="Spikey.cpp" />
     <ClCompile Include="tileMap.cpp" />
     <ClCompile Include="Turtle.cpp" />
+    <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
