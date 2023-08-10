@@ -9,6 +9,8 @@
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 512
 
+#define JUMP_SOUND "assets/JUMP.wav"
+
 using namespace sf;
 
 class Mario : public Entity
@@ -29,6 +31,9 @@ private:
 	float flPreviousTime = 0;
 	float flCurrentTime = 0;
 	float dt;
+
+	SoundBuffer jumpBuffer;
+	Sound jumpSound;
 
 	bool keyRel = false;
 

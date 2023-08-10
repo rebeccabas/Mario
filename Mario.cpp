@@ -27,6 +27,11 @@ Mario::Mario()
 	Height = 64;
 	Velocity = 0.7;
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
+
+
+
+	jumpBuffer.loadFromFile(JUMP_SOUND);
+	jumpSound.setBuffer(jumpBuffer);
 }
 
 
@@ -42,8 +47,10 @@ void Mario::update(int mapWidth)
 	else
 		velocity.x = 0;
 
-	if (Keyboard::isKeyPressed(Keyboard::Key::Up) && canJump)
+	if (Keyboard::isKeyPressed(Keyboard::Key::Up) && canJump) {
 		keyRel = true;
+		jumpSound.play();
+	}
 
 
 	if (keyRel && this->top() > 0 && canJump)
