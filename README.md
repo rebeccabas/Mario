@@ -1,6 +1,5 @@
 # Mario type game
-Object-oriented C++ mario type game coded using *SFML library*.
-Project created as a semestral project at Silesian University of Technology. 
+Object-oriented C++ mario type game coded using *SFML library* by Nijiya, Sadhana and Rubika.
 
 ## Short description:
 The objective of this game is to reach the finish line avoid oponents and collecting coins on the way.
