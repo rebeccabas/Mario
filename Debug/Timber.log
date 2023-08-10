@@ -1,190 +1,181 @@
 ﻿  Bonus.cpp
-C:\Super-mario\Bonus.cpp(26,13): warning C4305: '=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Bonus.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
   entity.cpp
-C:\Super-mario\entity.cpp(66,72): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\MarioClone\MarioClone\entity.cpp(66,72): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
           with
           [
               T=int
           ]
-C:\Super-mario\entity.cpp(66,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\MarioClone\MarioClone\entity.cpp(66,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
           with
           [
               T=int
           ]
   flyTur.cpp
-C:\Super-mario\flyTur.cpp(26,13): warning C4305: '=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\flyTur.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
   Game.cpp
-C:\Super-mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
-C:\Super-mario\tileMap.h(18,1): message : see previous definition of 'TOP'
-C:\Super-mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
-C:\Super-mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
-C:\Super-mario\Game.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
-C:\Super-mario\Game.cpp(150,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(18,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+E:\MarioClone\MarioClone\Game.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
+E:\MarioClone\MarioClone\Game.cpp(150,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Game.cpp(151,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(151,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Game.cpp(153,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(153,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Game.cpp(243,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(243,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Game.cpp(264,20): warning C4018: '<': signed/unsigned mismatch
-C:\Super-mario\Game.cpp(272,20): warning C4018: '<': signed/unsigned mismatch
-C:\Super-mario\Game.cpp(317,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Super-mario\Game.cpp(318,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(264,20): warning C4018: '<': signed/unsigned mismatch
+E:\MarioClone\MarioClone\Game.cpp(272,20): warning C4018: '<': signed/unsigned mismatch
+E:\MarioClone\MarioClone\Game.cpp(317,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(318,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   GameInfo.cpp
-C:\Super-mario\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
   main.cpp
-C:\Super-mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
-C:\Super-mario\tileMap.h(18,1): message : see previous definition of 'TOP'
-C:\Super-mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
-C:\Super-mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+E:\MarioClone\MarioClone\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(18,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
   Mario.cpp
-C:\Super-mario\Mario.cpp(28,13): warning C4305: '=': truncation from 'double' to 'float'
-C:\Super-mario\Mario.cpp(58,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Mario.cpp(28,16): warning C4305: '=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(58,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Mario.cpp(63,16): warning C4305: '=': truncation from 'double' to 'T'
+E:\MarioClone\MarioClone\Mario.cpp(63,19): warning C4305: '=': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-C:\Super-mario\Mario.cpp(93,19): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Super-mario\Mario.cpp(94,15): warning C4305: '*=': truncation from 'double' to 'float'
-C:\Super-mario\Mario.cpp(125,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Mario.cpp(93,25): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(94,15): warning C4305: '*=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(125,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
   Menu.cpp
-C:\Super-mario\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(46,96): warning C4305: 'argument': truncation from 'double' to 'T'
+E:\MarioClone\MarioClone\Menu.cpp(46,101): warning C4305: 'argument': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(48,96): warning C4305: 'argument': truncation from 'double' to 'T'
+E:\MarioClone\MarioClone\Menu.cpp(48,101): warning C4305: 'argument': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\Menu.cpp(225,22): warning C4018: '<': signed/unsigned mismatch
+E:\MarioClone\MarioClone\Menu.cpp(225,22): warning C4018: '<': signed/unsigned mismatch
   Screenshot.cpp
   Spikey.cpp
-C:\Super-mario\Spikey.cpp(25,13): warning C4305: '=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Spikey.cpp(25,16): warning C4305: '=': truncation from 'double' to 'float'
   tileMap.cpp
-C:\Super-mario\tileMap.cpp(49,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(49,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(49,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(49,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(50,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(50,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(50,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(50,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(51,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(51,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(51,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(51,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(52,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(52,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(52,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(52,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(55,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-C:\Super-mario\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(55,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -193,7 +184,7 @@ C:\Super-mario\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -202,7 +193,7 @@ C:\Super-mario\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -211,7 +202,7 @@ C:\Super-mario\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -220,7 +211,7 @@ C:\Super-mario\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -229,7 +220,7 @@ C:\Super-mario\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -238,7 +229,7 @@ C:\Super-mario\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int
@@ -247,13 +238,210 @@ C:\Super-mario\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T
           [
               T=float
           ]
-C:\Super-mario\tileMap.cpp(73,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Super-mario\tileMap.cpp(74,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Super-mario\tileMap.cpp(75,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Super-mario\tileMap.cpp(76,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Super-mario\tileMap.cpp(84,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Super-mario\tileMap.cpp(144,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Super-mario\tileMap.cpp(179,21): warning C4018: '<': signed/unsigned mismatch
+E:\MarioClone\MarioClone\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(73,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(74,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(75,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(76,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(84,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(144,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(179,21): warning C4018: '<': signed/unsigned mismatch
   Turtle.cpp
   Generating Code...
-  Timber.vcxproj -> C:\Super-mario\Debug\Mario.exe
+Spikey.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Entity@@QAE@XZ$0
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
+Spikey.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ) referenced in function "public: __thiscall Entity::Entity(void)" (??0Entity@@QAE@XZ)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(void)" (__imp_??0Drawable@sf@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+entity.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+GameInfo.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z)
+Spikey.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ) referenced in function __unwindfunclet$??0Entity@@QAE@XZ$3
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(void)" (__imp_??0VertexArray@sf@@QAE@XZ)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+Turtle.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ) referenced in function __unwindfunclet$??0Entity@@QAE@XZ$1
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Screenshot.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+Turtle.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ) referenced in function "public: __thiscall Turtle::Turtle(void)" (??0Turtle@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Screenshot.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+entity.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(void)" (__imp_??0Sprite@sf@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+entity.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Spikey.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Turtle.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Bonus.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+flyTur.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+entity.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Vector2<float> const & __thiscall sf::Transformable::getPosition(void)const " (__imp_?getPosition@Transformable@sf@@QBEABV?$Vector2@M@2@XZ) referenced in function "public: float __thiscall Entity::bottom(void)" (?bottom@Entity@@QAEMXZ)
+entity.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::move(class sf::Vector2<float> const &)" (__imp_?move@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z) referenced in function "public: void __thiscall Entity::moveBottom(void)" (?moveBottom@Entity@@QAEXXZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::move(class sf::Vector2<float> const &)" (__imp_?move@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+entity.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+Game.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+GameInfo.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+GameInfo.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+GameInfo.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ) referenced in function "public: void __thiscall Game::Menu(int)" (?Menu@Game@@QAEXH@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ) referenced in function "public: void __thiscall Game::run(void)" (?run@Game@@QAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z) referenced in function "public: void __thiscall Game::Menu(int)" (?Menu@Game@@QAEXH@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::setVisible(bool)" (__imp_?setVisible@Window@sf@@QAEX_N@Z) referenced in function "public: void __thiscall Game::update(void)" (?update@Game@@QAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ) referenced in function "public: void __thiscall Game::Menu(int)" (?Menu@Game@@QAEXH@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Drawable::Drawable(class sf::Drawable const &)" (__imp_??0Drawable@sf@@QAE@ABV01@@Z) referenced in function "public: __thiscall Entity::Entity(class Entity const &)" (??0Entity@@QAE@ABV0@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Transformable::~Transformable(void)" (__imp_??1Transformable@sf@@UAE@XZ) referenced in function "public: virtual __thiscall TileMap::~TileMap(void)" (??1TileMap@@UAE@XZ)
+tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Transformable::~Transformable(void)" (__imp_??1Transformable@sf@@UAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QAE@EEEE@Z) referenced in function "public: void __thiscall Game::render(void)" (?render@Game@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QAE@EEEE@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(class sf::VertexArray const &)" (__imp_??0VertexArray@sf@@QAE@ABV01@@Z) referenced in function "public: __thiscall Entity::Entity(class Entity const &)" (??0Entity@@QAE@ABV0@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(class sf::Texture const &)" (__imp_??0Texture@sf@@QAE@ABV01@@Z) referenced in function "public: __thiscall Entity::Entity(class Entity const &)" (??0Entity@@QAE@ABV0@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::View::View(void)" (__imp_??0View@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::View::setCenter(float,float)" (__imp_?setCenter@View@sf@@QAEXMM@Z) referenced in function "public: void __thiscall Game::intersection(class Mario &,class Entity &)" (?intersection@Game@@QAEXAAVMario@@AAVEntity@@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::View::setCenter(class sf::Vector2<float> const &)" (__imp_?setCenter@View@sf@@QAEXABV?$Vector2@M@2@@Z) referenced in function "public: void __thiscall Game::cameraMovement(void)" (?cameraMovement@Game@@QAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::View::reset(class sf::Rect<float> const &)" (__imp_?reset@View@sf@@QAEXABV?$Rect@M@2@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Vector2<float> const & __thiscall sf::View::getCenter(void)const " (__imp_?getCenter@View@sf@@QBEABV?$Vector2@M@2@XZ) referenced in function "public: void __thiscall Game::render(void)" (?render@Game@@QAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QAEXABVColor@2@@Z) referenced in function "public: void __thiscall Game::render(void)" (?render@Game@@QAEXXZ)
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::clear(int,bool)" (__imp_?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::setView(class sf::View const &)" (__imp_?setView@RenderTarget@sf@@QAEXABVView@2@@Z) referenced in function "public: void __thiscall Game::render(void)" (?render@Game@@QAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) referenced in function "public: virtual void * __thiscall sf::RenderWindow::`scalar deleting destructor'(unsigned int)" (??_GRenderWindow@sf@@UAEPAXI@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ) referenced in function "public: void __thiscall Game::intersection(class Mario &,class Entity &)" (?intersection@Game@@QAEXAAVMario@@AAVEntity@@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QAE@ABV01@@Z) referenced in function "public: __thiscall Entity::Entity(class Entity const &)" (??0Entity@@QAE@ABV0@@Z)
+Game.obj : error LNK2001: unresolved external symbol "public: virtual class sf::Vector2<unsigned int> __thiscall sf::RenderWindow::getSize(void)const " (?getSize@RenderWindow@sf@@UBE?AV?$Vector2@I@2@XZ)
+Game.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall sf::RenderWindow::setActive(bool)" (?setActive@RenderWindow@sf@@UAE_N_N@Z)
+Game.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall sf::RenderWindow::onCreate(void)" (?onCreate@RenderWindow@sf@@MAEXXZ)
+Game.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall sf::RenderWindow::onResize(void)" (?onResize@RenderWindow@sf@@MAEXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B) referenced in function "public: void __thiscall Game::drawMobs(void)" (?drawMobs@Game@@QAEXXZ)
+GameInfo.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::locale const &)" (__imp_??0String@sf@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABVlocale@3@@Z) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::locale const &)" (__imp_??0String@sf@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABVlocale@3@@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::Font(void)" (__imp_??0Font@sf@@QAE@XZ) referenced in function "public: __thiscall GameInfo::GameInfo(void)" (??0GameInfo@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::Font(void)" (__imp_??0Font@sf@@QAE@XZ)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::~Font(void)" (__imp_??1Font@sf@@QAE@XZ) referenced in function __unwindfunclet$??0GameInfo@@QAE@XZ$2
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::~Font(void)" (__imp_??1Font@sf@@QAE@XZ)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Font@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "public: __thiscall GameInfo::GameInfo(void)" (??0GameInfo@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@Font@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Text::Text(void)" (__imp_??0Text@sf@@QAE@XZ) referenced in function "public: __thiscall GameInfo::GameInfo(void)" (??0GameInfo@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Text::Text(void)" (__imp_??0Text@sf@@QAE@XZ)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QAEXABVString@2@@Z) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QAEXABVString@2@@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QAEXABVFont@2@@Z) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QAEXABVFont@2@@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QAEXI@Z) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QAEXI@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Text@sf@@QAEXABVColor@2@@Z) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Text@sf@@QAEXABVColor@2@@Z)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ) referenced in function "public: __thiscall GameInfo::GameInfo(void)" (??0GameInfo@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ)
+GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B) referenced in function __catch$??0GameInfo@@QAE@XZ$0
+Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B)
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sound::Sound(void)" (__imp_??0Sound@sf@@QAE@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual void __thiscall sf::Sound::play(void)" (__imp_?play@Sound@sf@@UAEXXZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sound::setBuffer(class sf::SoundBuffer const &)" (__imp_?setBuffer@Sound@sf@@QAEXABVSoundBuffer@2@@Z) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual enum sf::SoundSource::Status __thiscall sf::Sound::getStatus(void)const " (__imp_?getStatus@Sound@sf@@UBE?AW4Status@SoundSource@2@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QAE@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ) referenced in function _main
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::SoundBuffer::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
+Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: int __thiscall sf::Time::asMilliseconds(void)const " (__imp_?asMilliseconds@Time@sf@@QBEHXZ) referenced in function "public: float __thiscall Mario::getCurrentTime(void)" (?getCurrentTime@Mario@@QAEMXZ)
+Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ) referenced in function "public: __thiscall Mario::Mario(void)" (??0Mario@@QAE@XZ)
+Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ) referenced in function "public: float __thiscall Mario::getCurrentTime(void)" (?getCurrentTime@Mario@@QAEMXZ)
+Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z) referenced in function "public: void __thiscall Mario::update(int)" (?update@Mario@@QAEXH@Z)
+Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setScale(float,float)" (__imp_?setScale@Transformable@sf@@QAEXMM@Z) referenced in function "public: void __thiscall Mario::setBigMario(bool)" (?setBigMario@Mario@@QAEX_N@Z)
+Menu.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(float,float)" (__imp_?setPosition@Transformable@sf@@QAEXMM@Z) referenced in function __catch$?draw@Menu@@QAEXAAVRenderWindow@sf@@H@Z$0
+Menu.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(class sf::Vector2<float> const &)" (__imp_?setOrigin@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z) referenced in function __catch$?draw@Menu@@QAEXAAVRenderWindow@sf@@H@Z$2
+Menu.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::Black" (__imp_?Black@Color@sf@@2V12@B) referenced in function "public: void __thiscall Menu::loadReslutsToArray(void)" (?loadReslutsToArray@Menu@@QAEXXZ)
+Screenshot.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Image::~Image(void)" (__imp_??1Image@sf@@QAE@XZ) referenced in function "public: void __thiscall Screenshot::create(class sf::RenderWindow *)" (?create@Screenshot@@QAEXPAVRenderWindow@sf@@@Z)
+Screenshot.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Image::saveToFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)const " (__imp_?saveToFile@Image@sf@@QBE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "public: void __thiscall Screenshot::create(class sf::RenderWindow *)" (?create@Screenshot@@QAEXPAVRenderWindow@sf@@@Z)
+Screenshot.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::create(unsigned int,unsigned int)" (__imp_?create@Texture@sf@@QAE_NII@Z) referenced in function "public: void __thiscall Screenshot::create(class sf::RenderWindow *)" (?create@Screenshot@@QAEXPAVRenderWindow@sf@@@Z)
+Screenshot.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Image __thiscall sf::Texture::copyToImage(void)const " (__imp_?copyToImage@Texture@sf@@QBE?AVImage@2@XZ) referenced in function "public: void __thiscall Screenshot::create(class sf::RenderWindow *)" (?create@Screenshot@@QAEXPAVRenderWindow@sf@@@Z)
+Screenshot.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Texture::update(class sf::Window const &)" (__imp_?update@Texture@sf@@QAEXABVWindow@2@@Z) referenced in function "public: void __thiscall Screenshot::create(class sf::RenderWindow *)" (?create@Screenshot@@QAEXPAVRenderWindow@sf@@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) class sf::Transform & __cdecl sf::operator*=(class sf::Transform &,class sf::Transform const &)" (__imp_??Xsf@@YAAAVTransform@0@AAV10@ABV10@@Z) referenced in function "private: virtual void __thiscall TileMap::draw(class sf::RenderTarget &,class sf::RenderStates)const " (?draw@TileMap@@EBEXAAVRenderTarget@sf@@VRenderStates@3@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Transformable::Transformable(void)" (__imp_??0Transformable@sf@@QAE@XZ) referenced in function "public: __thiscall TileMap::TileMap(void)" (??0TileMap@@QAE@XZ)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Transform const & __thiscall sf::Transformable::getTransform(void)const " (__imp_?getTransform@Transformable@sf@@QBEABVTransform@2@XZ) referenced in function "private: virtual void __thiscall TileMap::draw(class sf::RenderTarget &,class sf::RenderStates)const " (?draw@TileMap@@EBEXAAVRenderTarget@sf@@VRenderStates@3@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Vertex & __thiscall sf::VertexArray::operator[](unsigned int)" (__imp_??AVertexArray@sf@@QAEAAVVertex@1@I@Z) referenced in function "public: bool __thiscall TileMap::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Vector2<unsigned int>)" (?load@TileMap@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Vector2@I@sf@@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::VertexArray::resize(unsigned int)" (__imp_?resize@VertexArray@sf@@QAEXI@Z) referenced in function "public: bool __thiscall TileMap::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Vector2<unsigned int>)" (?load@TileMap@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Vector2@I@sf@@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::VertexArray::setPrimitiveType(enum sf::PrimitiveType)" (__imp_?setPrimitiveType@VertexArray@sf@@QAEXW4PrimitiveType@2@@Z) referenced in function "public: bool __thiscall TileMap::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Vector2<unsigned int>)" (?load@TileMap@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Vector2@I@sf@@@Z)
+tileMap.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Vector2<unsigned int> __thiscall sf::Texture::getSize(void)const " (__imp_?getSize@Texture@sf@@QBE?AV?$Vector2@I@2@XZ) referenced in function "public: bool __thiscall TileMap::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Vector2<unsigned int>)" (?load@TileMap@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Vector2@I@sf@@@Z)
+SFML\lib\sfml-graphics-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+SFML\lib\sfml-window-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+SFML\lib\sfml-system-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+SFML\lib\sfml-network-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+SFML\lib\sfml-audio-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+E:\MarioClone\MarioClone\Debug\Mario.exe : fatal error LNK1120: 83 unresolved externals
