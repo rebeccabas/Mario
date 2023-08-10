@@ -51,7 +51,7 @@ GameInfo::~GameInfo()
 void GameInfo::followMario(int center)
 {
 	info[0].setPosition(sf::Vector2f(center - 430, WINDOW_HEIGHT / 20));
-	info[1].setPosition(sf::Vector2f(center - 100, WINDOW_HEIGHT / 20));
+	info[1].setPosition(sf::Vector2f(center - 170, WINDOW_HEIGHT / 20));
 	info[2].setPosition(sf::Vector2f(center + 100, WINDOW_HEIGHT / 20));
 	info[3].setPosition(sf::Vector2f(center + 300, WINDOW_HEIGHT / 20));
 }
