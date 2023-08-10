@@ -1,0 +1,30 @@
+Wed Jun  3 00:00:36 2019
+Coins: 048 Score: 0345 Time: 037 paw
+
+Wed Jun  5 00:01:50 2019
+Coins: 064 Score: 0665 Time: 045 szymon
+
+Wed Jun  2 00:01:50 2019
+Coins: 020 Score: 0120 Time: 045 Mati
+
+Sat Jun  8 22:41:41 2019
+Coins: 051 Score: 0555 Time: 041 Kuba
+
+Sat Jun  8 22:43:18 2019
+Coins: 047 Score: 0505 Time: 033 Adam
+
+Sat Jun  8 22:45:24 2019
+Coins: 046 Score: 0325 Time: 037 paw
+
+Sat Jun  8 22:47:00 2019
+Coins: 045 Score: 0350 Time: 040 aas
+
+Sat Jun  8 22:48:48 2019
+Coins: 048 Score: 0345 Time: 037 Mateusz
+
+Sat Jun  8 22:52:31 2019
+Coins: 042 Score: 0295 Time: 035 Kula
+
+Sat Jun  8 23:05:16 2019
+Coins: 045 Score: 0395 Time: 031 Kasia
+

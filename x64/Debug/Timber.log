@@ -1,0 +1,258 @@
+﻿D:\Programs\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Timber.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Bonus.cpp
+D:\Programs\VS 2019\Projects\Mario\Bonus.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
+  entity.cpp
+D:\Programs\VS 2019\Projects\Mario\entity.cpp(66,72): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+D:\Programs\VS 2019\Projects\Mario\entity.cpp(66,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+  flyTur.cpp
+D:\Programs\VS 2019\Projects\Mario\flyTur.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
+  Game.cpp
+D:\Programs\VS 2019\Projects\Mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+D:\Programs\VS 2019\Projects\Mario\tileMap.h(18,1): message : see previous definition of 'TOP'
+D:\Programs\VS 2019\Projects\Mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+D:\Programs\VS 2019\Projects\Mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(150,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(151,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(153,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(243,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(317,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\Game.cpp(318,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  GameInfo.cpp
+D:\Programs\VS 2019\Projects\Mario\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  main.cpp
+D:\Programs\VS 2019\Projects\Mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+D:\Programs\VS 2019\Projects\Mario\tileMap.h(18,1): message : see previous definition of 'TOP'
+D:\Programs\VS 2019\Projects\Mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+D:\Programs\VS 2019\Projects\Mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+  Mario.cpp
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(28,16): warning C4305: '=': truncation from 'double' to 'float'
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(58,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(63,19): warning C4305: '=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(93,25): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(94,15): warning C4305: '*=': truncation from 'double' to 'float'
+D:\Programs\VS 2019\Projects\Mario\Mario.cpp(125,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+  Menu.cpp
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(46,101): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(48,101): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\Menu.cpp(250,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Screenshot.cpp
+  Spikey.cpp
+D:\Programs\VS 2019\Projects\Mario\Spikey.cpp(25,16): warning C4305: '=': truncation from 'double' to 'float'
+  tileMap.cpp
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(49,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(49,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(50,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(50,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(51,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(51,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(52,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(52,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(55,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(73,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(74,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(75,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(76,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(84,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(144,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(177,24): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\Programs\VS 2019\Projects\Mario\tileMap.cpp(179,21): warning C4018: '<': signed/unsigned mismatch
+  Turtle.cpp
+  Generating Code...
+  Timber.vcxproj -> D:\Programs\VS 2019\Projects\Mario\x64\Debug\Mario.exe

@@ -1,0 +1,259 @@
+﻿  Bonus.cpp
+C:\Super-mario\Bonus.cpp(26,13): warning C4305: '=': truncation from 'double' to 'float'
+  entity.cpp
+C:\Super-mario\entity.cpp(66,72): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Super-mario\entity.cpp(66,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+  flyTur.cpp
+C:\Super-mario\flyTur.cpp(26,13): warning C4305: '=': truncation from 'double' to 'float'
+  Game.cpp
+C:\Super-mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+C:\Super-mario\tileMap.h(18,1): message : see previous definition of 'TOP'
+C:\Super-mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+C:\Super-mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+C:\Super-mario\Game.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
+C:\Super-mario\Game.cpp(150,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Game.cpp(151,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Game.cpp(153,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Game.cpp(243,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Game.cpp(264,20): warning C4018: '<': signed/unsigned mismatch
+C:\Super-mario\Game.cpp(272,20): warning C4018: '<': signed/unsigned mismatch
+C:\Super-mario\Game.cpp(317,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Super-mario\Game.cpp(318,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  GameInfo.cpp
+C:\Super-mario\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  main.cpp
+C:\Super-mario\Game.h(22,1): warning C4005: 'TOP': macro redefinition
+C:\Super-mario\tileMap.h(18,1): message : see previous definition of 'TOP'
+C:\Super-mario\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
+C:\Super-mario\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
+  Mario.cpp
+C:\Super-mario\Mario.cpp(28,13): warning C4305: '=': truncation from 'double' to 'float'
+C:\Super-mario\Mario.cpp(58,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Mario.cpp(63,16): warning C4305: '=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Mario.cpp(93,19): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Super-mario\Mario.cpp(94,15): warning C4305: '*=': truncation from 'double' to 'float'
+C:\Super-mario\Mario.cpp(125,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+  Menu.cpp
+C:\Super-mario\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(46,96): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(48,96): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\Menu.cpp(225,22): warning C4018: '<': signed/unsigned mismatch
+  Screenshot.cpp
+  Spikey.cpp
+C:\Super-mario\Spikey.cpp(25,13): warning C4305: '=': truncation from 'double' to 'float'
+  tileMap.cpp
+C:\Super-mario\tileMap.cpp(49,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(49,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(50,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(50,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(51,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(51,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(52,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(52,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(55,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Super-mario\tileMap.cpp(73,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Super-mario\tileMap.cpp(74,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Super-mario\tileMap.cpp(75,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Super-mario\tileMap.cpp(76,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Super-mario\tileMap.cpp(84,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Super-mario\tileMap.cpp(144,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Super-mario\tileMap.cpp(179,21): warning C4018: '<': signed/unsigned mismatch
+  Turtle.cpp
+  Generating Code...
+  Timber.vcxproj -> C:\Super-mario\Debug\Mario.exe

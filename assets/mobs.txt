@@ -1,0 +1,11 @@
+Turtle 0400,400
+Turtle 1400,100
+Turtle 2432,100
+Turtle 5700,256
+Spikey 6800,400
+Spikey 6600,400
+Spikey 1800,200
+FlyTur 1200,140
+FlyTur 7000,140
+FlyTur 5200,080
+FlyTur 5600,140

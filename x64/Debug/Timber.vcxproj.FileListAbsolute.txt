@@ -1,0 +1,2 @@
+D:\Programs\VS 2019\Projects\Timber\x64\Debug\Mario.exe
+D:\Programs\VS 2019\Projects\Mario\x64\Debug\Mario.exe

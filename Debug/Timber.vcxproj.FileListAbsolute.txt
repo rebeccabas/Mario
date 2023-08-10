@@ -1,0 +1,2 @@
+C:\Mario\Debug\Mario.exe
+C:\Super-mario\Debug\Mario.exe

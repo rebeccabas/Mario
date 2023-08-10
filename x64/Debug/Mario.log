@@ -1,0 +1,6 @@
+﻿  Entity.cpp
+P:\_study\pk4\project\Mario\Mario_4semProject\Mario\Entity.cpp(24): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  main.cpp
+  tileMap.cpp
+  Generating Code...
+sfml-graphics-s-d.lib(Color.cpp.obj) : fatal error LNK1112: module machine type 'x86' conflicts with target machine type 'x64'
