@@ -21,7 +21,7 @@ Mario::Mario()
  
 
 	sprite.setTexture(texture);
-	startingPosition = { 62,0 };
+	startingPosition = { 62,200 };
 	sprite.setPosition(startingPosition);
 	Width = 32;
 	Height = 64;
@@ -41,7 +41,6 @@ Mario::Mario()
 void Mario::update(int mapWidth)
 {
 	this->sprite.move(this->velocity);
-
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Left) && this->left() > 0)
 		velocity.x = -Velocity;
@@ -74,18 +73,50 @@ void Mario::update(int mapWidth)
 		canJump = false;
 		keyRel = false;
 	}
-	if (this->bottom() > WINDOW_HEIGHT)
+
+	if (this->bottom() > WINDOW_HEIGHT)//mario falling off
 	{
+	
 		//twice, Mario can be in 2 lives mode, but this should kill him anyway
 		this->dead();
 		this->dead();
+
+		goToStart();
+
 	}
 }
 
+
+void drawDeathScreen(int center, sf::RenderWindow& window)
+{
+	sf::Texture texture;
+	try {
+		if (!texture.loadFromFile("assets/deathscreen.png"))
+		{
+			throw - 1;
+		}
+	}
+	catch (int)
+	{
+		std::cout << "can not load death background texture";
+		exit(1);
+	}
+	//display background
+	sf::Sprite sprite;
+	sprite.setTexture(texture);
+	sprite.setOrigin({ 0,0 });
+	sprite.setPosition(0,0);
+	window.draw(sprite);
+}
+void Mario::goToStart()
+{
+	this->sprite.setPosition(startingPosition);
+}
 void Mario::killingMove()
 {
 	this->sprite.move({ 0,-40 });
 }
+
 void Mario::setCanJump(bool canJump)
 {
 	this->canJump = canJump;
@@ -111,7 +142,7 @@ void Mario::setBigMario(bool isBig)
 }
 
 void Mario::dead() {
-
+	
 	if (bigMario) {
 		setBigMario(false);
 		reset();

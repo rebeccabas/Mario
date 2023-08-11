@@ -8,6 +8,8 @@ int main()
 	Game game;
 	sf::SoundBuffer buffer;
 	sf::Sound sound;
+	Menu menuscreen;
+	menuscreen.drawMenuBackground();
 
 	if (!buffer.loadFromFile("assets/bgm.wav")) {
 		//error handling
@@ -17,6 +19,7 @@ int main()
 
 	if (sound.getStatus() != sf::Sound::Playing) {
 		sound.play();
+
 	}
 	game.run();
 	/*
