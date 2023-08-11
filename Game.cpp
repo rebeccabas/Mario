@@ -13,6 +13,8 @@ Game::Game()
 
 	addMobs();
 
+	mushroomBuffer.loadFromFile(MUSHROOM_SOUND);
+	mushroomSound.setBuffer(mushroomBuffer);
 
 }
 
