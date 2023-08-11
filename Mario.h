@@ -10,6 +10,7 @@
 #define WINDOW_HEIGHT 512
 
 #define JUMP_SOUND "assets/JUMP.wav"
+#define DIE_SOUND "assets/die.wav"
 
 using namespace sf;
 
@@ -32,8 +33,10 @@ private:
 	float flCurrentTime = 0;
 	float dt;
 
-	SoundBuffer jumpBuffer;
-	Sound jumpSound;
+	SoundBuffer jumpBuffer, dieBuffer;
+	Sound jumpSound, dieSound;
+
+
 
 	bool keyRel = false;
 
