@@ -33,6 +33,7 @@ private:
 	sf::Text resultsToDisplay[NUMBER_OF_RESULTS];
 
 public:
+	friend class Mario;
 	Menu();
 	~Menu();
 

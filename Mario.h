@@ -5,6 +5,7 @@
 #include <chrono>
 #include <string>
 #include"entity.h"
+#include "Menu.h"
 
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 512
@@ -16,7 +17,6 @@ using namespace sf;
 class Mario : public Entity
 {
 private:
-
 	int lives = 3;
 	bool canJump = 0;
 	float jumpHeight = 600;
@@ -31,19 +31,21 @@ private:
 	float flPreviousTime = 0;
 	float flCurrentTime = 0;
 	float dt;
+	sf::View view;
 
 	SoundBuffer jumpBuffer;
 	Sound jumpSound;
-
 	bool keyRel = false;
 
-public:
+	Menu menuscreen;
 
+public:
 	Mario();
 
 	void update(int mapWidth);
 
 	void killingMove();
+	void goToStart();
 
 	void setCanJump(bool canJump);
 
@@ -56,5 +58,6 @@ public:
 	float getCurrentTime();
 
 	void fallDown();
+	void drawDeathScreen();
 
 };

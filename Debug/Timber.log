@@ -1,19 +1,4 @@
-﻿  Bonus.cpp
-E:\MarioClone\MarioClone\Bonus.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
-  entity.cpp
-E:\MarioClone\MarioClone\entity.cpp(66,72): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
-E:\MarioClone\MarioClone\entity.cpp(66,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
-  flyTur.cpp
-E:\MarioClone\MarioClone\flyTur.cpp(26,16): warning C4305: '=': truncation from 'double' to 'float'
-  Game.cpp
+﻿  Game.cpp
 E:\MarioClone\MarioClone\Game.h(22,1): warning C4005: 'TOP': macro redefinition
 E:\MarioClone\MarioClone\tileMap.h(18,1): message : see previous definition of 'TOP'
 E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
@@ -43,218 +28,26 @@ E:\MarioClone\MarioClone\Game.cpp(264,20): warning C4018: '<': signed/unsigned m
 E:\MarioClone\MarioClone\Game.cpp(272,20): warning C4018: '<': signed/unsigned mismatch
 E:\MarioClone\MarioClone\Game.cpp(317,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 E:\MarioClone\MarioClone\Game.cpp(318,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  GameInfo.cpp
-E:\MarioClone\MarioClone\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+  Mario.cpp
+E:\MarioClone\MarioClone\Mario.cpp(28,16): warning C4305: '=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(65,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Mario.cpp(70,19): warning C4305: '=': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
+E:\MarioClone\MarioClone\Mario.cpp(100,25): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(101,15): warning C4305: '*=': truncation from 'double' to 'float'
+E:\MarioClone\MarioClone\Mario.cpp(132,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
   main.cpp
 E:\MarioClone\MarioClone\Game.h(22,1): warning C4005: 'TOP': macro redefinition
 E:\MarioClone\MarioClone\tileMap.h(18,1): message : see previous definition of 'TOP'
 E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'BOTTOM': macro redefinition
 E:\MarioClone\MarioClone\tileMap.h(17,1): message : see previous definition of 'BOTTOM'
-  Mario.cpp
-E:\MarioClone\MarioClone\Mario.cpp(28,16): warning C4305: '=': truncation from 'double' to 'float'
-E:\MarioClone\MarioClone\Mario.cpp(58,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Mario.cpp(63,19): warning C4305: '=': truncation from 'double' to 'T'
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Mario.cpp(93,25): warning C4305: 'argument': truncation from 'double' to 'float'
-E:\MarioClone\MarioClone\Mario.cpp(94,15): warning C4305: '*=': truncation from 'double' to 'float'
-E:\MarioClone\MarioClone\Mario.cpp(125,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
-  Menu.cpp
-E:\MarioClone\MarioClone\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(46,101): warning C4305: 'argument': truncation from 'double' to 'T'
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(48,101): warning C4305: 'argument': truncation from 'double' to 'T'
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Menu.cpp(225,22): warning C4018: '<': signed/unsigned mismatch
-  Screenshot.cpp
-  Spikey.cpp
-E:\MarioClone\MarioClone\Spikey.cpp(25,16): warning C4305: '=': truncation from 'double' to 'float'
-  tileMap.cpp
-E:\MarioClone\MarioClone\tileMap.cpp(49,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(49,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(50,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(50,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(51,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(51,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(52,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(52,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(55,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(55,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(56,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(56,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(57,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(57,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(58,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(58,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\tileMap.cpp(73,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(74,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(75,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(76,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(84,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(144,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-E:\MarioClone\MarioClone\tileMap.cpp(179,21): warning C4018: '<': signed/unsigned mismatch
-  Turtle.cpp
   Generating Code...
 Spikey.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Entity@@QAE@XZ$0
 tileMap.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Drawable::~Drawable(void)" (__imp_??1Drawable@sf@@UAE@XZ)
@@ -382,6 +175,12 @@ Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) publ
 Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) referenced in function "public: virtual void * __thiscall sf::RenderWindow::`scalar deleting destructor'(unsigned int)" (??_GRenderWindow@sf@@UAEPAXI@Z)
 Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ) referenced in function "public: void __thiscall Game::intersection(class Mario &,class Entity &)" (?intersection@Game@@QAEXAAVMario@@AAVEntity@@@Z)
 Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QAE@ABV01@@Z) referenced in function "public: __thiscall Entity::Entity(class Entity const &)" (??0Entity@@QAE@ABV0@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ) referenced in function "public: virtual __thiscall Mario::~Mario(void)" (??1Mario@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ) referenced in function "public: virtual __thiscall Mario::~Mario(void)" (??1Mario@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ)
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ)
 Game.obj : error LNK2001: unresolved external symbol "public: virtual class sf::Vector2<unsigned int> __thiscall sf::RenderWindow::getSize(void)const " (?getSize@RenderWindow@sf@@UBE?AV?$Vector2@I@2@XZ)
 Game.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall sf::RenderWindow::setActive(bool)" (?setActive@RenderWindow@sf@@UAE_N_N@Z)
 Game.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall sf::RenderWindow::onCreate(void)" (?onCreate@RenderWindow@sf@@MAEXXZ)
@@ -412,13 +211,15 @@ Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) publ
 GameInfo.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B) referenced in function __catch$??0GameInfo@@QAE@XZ$0
 Menu.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B)
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sound::Sound(void)" (__imp_??0Sound@sf@@QAE@XZ) referenced in function _main
-main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ) referenced in function _main
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sound::Sound(void)" (__imp_??0Sound@sf@@QAE@XZ)
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual void __thiscall sf::Sound::play(void)" (__imp_?play@Sound@sf@@UAEXXZ) referenced in function _main
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sound::setBuffer(class sf::SoundBuffer const &)" (__imp_?setBuffer@Sound@sf@@QAEXABVSoundBuffer@2@@Z) referenced in function _main
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sound::setBuffer(class sf::SoundBuffer const &)" (__imp_?setBuffer@Sound@sf@@QAEXABVSoundBuffer@2@@Z)
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual enum sf::SoundSource::Status __thiscall sf::Sound::getStatus(void)const " (__imp_?getStatus@Sound@sf@@UBE?AW4Status@SoundSource@2@XZ) referenced in function _main
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QAE@XZ) referenced in function _main
-main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ) referenced in function _main
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QAE@XZ)
 main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::SoundBuffer::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
+Mario.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::SoundBuffer::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: int __thiscall sf::Time::asMilliseconds(void)const " (__imp_?asMilliseconds@Time@sf@@QBEHXZ) referenced in function "public: float __thiscall Mario::getCurrentTime(void)" (?getCurrentTime@Mario@@QAEMXZ)
 Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ) referenced in function "public: __thiscall Mario::Mario(void)" (??0Mario@@QAE@XZ)
 Mario.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ) referenced in function "public: float __thiscall Mario::getCurrentTime(void)" (?getCurrentTime@Mario@@QAEMXZ)
