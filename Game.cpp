@@ -12,6 +12,8 @@ Game::Game()
 	gameInfo.reset();
 
 	addMobs();
+
+
 }
 
 Game::~Game()
@@ -49,6 +51,7 @@ void Game::intersection(Mario& mario, Entity& entity)
 						mario.killingMove();
 						mario.killingMove();
 						mario.dead();
+
 						int g = gameInfo.getLife();
 						if (g <= 0)
 						{
@@ -135,6 +138,8 @@ void Game::update()
 		won = true;
 	}
 
+
+
 	mario.update(map.getMapWidth());
 
 	Bonuses();	// update bonuses
@@ -165,10 +170,11 @@ void Game::render()
 
 void Game::Menu(int center)
 {
-	if (center < WINDOW_WIDTH / 2)
+	if (center != WINDOW_WIDTH / 2)
 		center = WINDOW_WIDTH / 2;
 
 	menu.followMario(center);
+	menu.drawMenuBackground(*window, center);
 	menu.draw(*window, center);
 
 	if (won)
@@ -251,7 +257,7 @@ void Game::run()
 
 void Game::cameraMovement()
 {
-	if (mario.getPosition().x > WINDOW_WIDTH / 2)
+	if (mario.getPosition().x != WINDOW_WIDTH / 2)
 		view.setCenter({ mario.getPosition().x, WINDOW_HEIGHT / 2 });
 }
 
