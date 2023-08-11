@@ -32,6 +32,9 @@ Mario::Mario()
 
 	jumpBuffer.loadFromFile(JUMP_SOUND);
 	jumpSound.setBuffer(jumpBuffer);
+
+	dieBuffer.loadFromFile(DIE_SOUND);
+	dieSound.setBuffer(dieBuffer);
 }
 
 
@@ -153,6 +156,7 @@ void Mario::dead() {
 		}
 		else
 		{
+			dieSound.play();
 			lives = 3;
 			isAlive = false;
 		}
