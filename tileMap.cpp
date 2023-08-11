@@ -4,6 +4,9 @@ TileMap::TileMap()
 {
 
 	loadArrayFromArray("assets/array.txt");
+
+	coinBuffer.loadFromFile(COIN_SOUND);
+	coinSound.setBuffer(coinBuffer);
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
@@ -114,6 +117,7 @@ int TileMap::collison(Entity& Entity, GameInfo& gameInfo)
 						{
 							tiles[i * width + j] = 0;	// change coin to heaven
 							load("assets/map.png", sf::Vector2u(64, 64));
+							coinSound.play();
 							gameInfo.increaseCoins();
 						}
 						if (tiles[i * width + j] == 5 || tiles[i * width + j] == 6)		// if Killing flower
