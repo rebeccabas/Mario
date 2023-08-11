@@ -12,6 +12,9 @@ Game::Game()
 	gameInfo.reset();
 
 	addMobs();
+
+	mushroomBuffer.loadFromFile(MUSHROOM_SOUND);
+	mushroomSound.setBuffer(mushroomBuffer);
 }
 
 Game::~Game()
@@ -28,6 +31,7 @@ void Game::intersection(Mario& mario, Entity& entity)
 			{
 				entity.dead();
 				mario.setBigMario(true);
+				mushroomSound.play();
 				gameInfo.increaseScoreBonus();
 			}
 			else
