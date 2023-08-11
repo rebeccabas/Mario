@@ -24,6 +24,7 @@
 #define LEFT 2
 #define RIGHT 3
 #define END_GAME 9
+#define MUSHROOM_SOUND "assets/mushroom.wav"
 
 class Game
 {
@@ -40,6 +41,10 @@ class Game
 
 	DWORD currentTickCount;
 	DWORD lastDrawTickCount;
+
+
+	SoundBuffer mushroomBuffer;
+	Sound mushroomSound;
 
 	bool won = false;
 

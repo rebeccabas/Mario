@@ -30,6 +30,7 @@ void Game::intersection(Mario& mario, Entity& entity)
 			{
 				entity.dead();
 				mario.setBigMario(true);
+				mushroomSound.play();
 				gameInfo.increaseScoreBonus();
 			}
 			else

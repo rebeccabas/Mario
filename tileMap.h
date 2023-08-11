@@ -3,6 +3,8 @@
 #define PLANT 5
 #define PLANT2 6
 
+#define COIN_SOUND "assets/coin.wav"
+
 #include<SFML/Graphics.hpp>
 #include<SFML/Window.hpp>
 
@@ -32,6 +34,11 @@ class TileMap : public sf::Drawable, public sf::Transformable
 	unsigned int mapWidth;
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 	bool bonus;
+
+	SoundBuffer coinBuffer;
+	Sound coinSound;
+
+
 public:
 	TileMap();
 	bool load(const std::string& tileset, sf::Vector2u tileSize);
