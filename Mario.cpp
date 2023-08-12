@@ -24,8 +24,8 @@ Mario::Mario()
 	startingPosition = { 62,200 };
 	sprite.setPosition(startingPosition);
 	Width = 32;
-	Height = 64;
-	Velocity = 0.7;
+	Height = 60;
+	Velocity = 0.4;
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
 
 
@@ -64,7 +64,7 @@ void Mario::update(int mapWidth)
 			keyRel = false;
 		}
 		jumpCurrentPosition++;
-		velocity.y = -Velocity * (1 - (jumpCurrentPosition * 1.4) / jumpHeight);
+		velocity.y = -(Velocity+0.3) * (1 - (jumpCurrentPosition * 1.4) / jumpHeight);
 	}
 	else
 	{

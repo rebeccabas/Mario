@@ -9,7 +9,6 @@ int main()
 	sf::SoundBuffer buffer;
 	sf::Sound sound;
 	Menu menuscreen;
-	menuscreen.drawMenuBackground();
 
 	if (!buffer.loadFromFile("assets/bgm.wav")) {
 		//error handling
