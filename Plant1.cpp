@@ -2,7 +2,7 @@
 
 
 
-Plant::Plant()
+Plant1::Plant1()
 {
 	file = "plant.png";
 	try
@@ -32,6 +32,6 @@ Plant::Plant()
 }
 
 
-Plant::~Plant()
+Plant1::~Plant1()
 {
 }
