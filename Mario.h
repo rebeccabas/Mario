@@ -12,6 +12,8 @@
 
 #define JUMP_SOUND "assets/JUMP.wav"
 #define DIE_SOUND "assets/die.wav"
+#define HIT_SOUND "assets/hit.wav"
+#define STOMP_SOUND "assets/stomp.wav"
 
 using namespace sf;
 
@@ -34,8 +36,8 @@ private:
 	float dt;
 	sf::View view;
 
-	SoundBuffer jumpBuffer, dieBuffer;
-	Sound jumpSound, dieSound;
+	SoundBuffer jumpBuffer, dieBuffer, hitBuffer, stompBuffer;
+	Sound jumpSound, dieSound, hitSound, stompSound;
 
 
 

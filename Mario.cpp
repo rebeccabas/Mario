@@ -28,13 +28,14 @@ Mario::Mario()
 	Velocity = 0.4;
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
 
-
-
 	jumpBuffer.loadFromFile(JUMP_SOUND);
 	jumpSound.setBuffer(jumpBuffer);
 
 	dieBuffer.loadFromFile(DIE_SOUND);
 	dieSound.setBuffer(dieBuffer);
+
+	hitBuffer.loadFromFile(HIT_SOUND);
+	hitSound.setBuffer(hitBuffer);
 }
 
 
@@ -115,6 +116,9 @@ void Mario::goToStart()
 }
 void Mario::killingMove()
 {
+	stompBuffer.loadFromFile(STOMP_SOUND);
+	stompSound.setBuffer(stompBuffer);
+	stompSound.play();
 	this->sprite.move({ 0,-40 });
 }
 
@@ -143,7 +147,7 @@ void Mario::setBigMario(bool isBig)
 }
 
 void Mario::dead() {
-
+	hitSound.play();
 	if (bigMario) {
 		setBigMario(false);
 		reset();

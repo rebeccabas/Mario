@@ -176,7 +176,7 @@ void Game::Menu(int center)
 		center = WINDOW_WIDTH / 2;
 
 	menu.followMario(center);
-	menu.drawMenuBackground(*window, 0);
+	menu.drawMenuBackground(*window, center);
 	menu.draw(*window, center);
 
 	if (won)
