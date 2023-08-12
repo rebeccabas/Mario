@@ -12,6 +12,7 @@ Game::Game()
 	gameInfo.reset();
 
 	addMobs();
+
 	mushroomBuffer.loadFromFile(MUSHROOM_SOUND);
 	mushroomSound.setBuffer(mushroomBuffer);
 }
@@ -328,8 +329,12 @@ void Game::addMobs()
 
 			else if (mobName.compare("Spikey") == 0)
 				wsk = new Spikey;
+
+			else if (mobName.compare("FlyTur") == 0)
+				wsk = new FlyTur;
+
 			else
-				wsk = new FlyTur; // if no mobName read from exist take FlyTur  
+				wsk = new Plant; // if no mobName read from exist take FlyTur  
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);

@@ -59,6 +59,7 @@ public:
 	Sprite getSprite() { return sprite; }
 
 	void dead() { isAlive = false; }
+	void deadAtOnce() { isAlive = false; }
 	bool getIsAlive() { return isAlive; }
 	bool getDestroyMode() { return destroyMode; }
 	void reset();
