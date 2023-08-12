@@ -62,7 +62,7 @@ bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize)
 
 	return true;
 }
-int TileMap::collison(Entity& Entity, GameInfo& gameInfo)
+int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 {
 	float bottom, top, right, left;
 	for (unsigned int i = 0; i < height; ++i)

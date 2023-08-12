@@ -49,6 +49,7 @@ class Game
 	bool won = false;
 
 public:
+	friend class Mario;
 	// constructors/destructors
 	Game();
 	virtual ~Game();

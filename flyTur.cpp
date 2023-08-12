@@ -23,7 +23,7 @@ FlyTur::FlyTur()
 
 	Height = 48;
 	Width = 32;
-	Velocity = 0.4;
+	Velocity = 0.2;
 	velocity = { Velocity , 0 };
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
 
