@@ -333,8 +333,11 @@ void Game::addMobs()
 			else if (mobName.compare("FlyTur") == 0)
 				wsk = new FlyTur;
 
+			else if (mobName.compare("Plant1") == 0)
+				wsk = new Plant1;
+
 			else
-				wsk = new Plant; // if no mobName read from exist take FlyTur  
+				wsk = new Plant2; // if no mobName read from exist take Plant2
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);
