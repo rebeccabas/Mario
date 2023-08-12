@@ -12,8 +12,6 @@ Game::Game()
 	gameInfo.reset();
 
 	addMobs();
-
-	/*for sound*/
 	mushroomBuffer.loadFromFile(MUSHROOM_SOUND);
 	mushroomSound.setBuffer(mushroomBuffer);
 }
