@@ -119,11 +119,11 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 							coinSound.play();
 							gameInfo.increaseCoins();
 						}
-						if (tiles[i * width + j] == 5 || tiles[i * width + j] == 6)		// if Killing flower
-						{
-							Entity.dead();
+						//if (tiles[i * width + j] == 5 || tiles[i * width + j] == 6)		// if Killing flower
+						//{
+						//	Entity.dead();
 
-						}
+						//}
 						if (tiles[i * width + j] == 9)		// if END game
 						{
 							return 9;

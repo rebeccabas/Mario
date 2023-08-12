@@ -1,3 +1,4 @@
+Plant1 1180,220
 Turtle 1400,400
 Turtle 2400,100
 Turtle 3432,100
