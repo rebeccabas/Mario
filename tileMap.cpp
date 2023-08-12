@@ -21,7 +21,6 @@ void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	target.draw(m_vertices, states);
 }
 
-
 bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize)
 {
 	this->tileSize = tileSize;
@@ -63,7 +62,7 @@ bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize)
 
 	return true;
 }
-int TileMap::collison(Entity& Entity, GameInfo& gameInfo)
+int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 {
 	float bottom, top, right, left;
 	for (unsigned int i = 0; i < height; ++i)

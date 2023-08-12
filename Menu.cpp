@@ -53,11 +53,8 @@ void Menu::followMario(int center)
 }
 
 
-Menu::~Menu()
-{
-}
 
-void Menu::draw(sf::RenderWindow& window, int center)
+void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
 	sf::Texture backgroundTexture;
 	try {
@@ -74,9 +71,30 @@ void Menu::draw(sf::RenderWindow& window, int center)
 	//display background
 	sf::Sprite spriteBackground;
 	spriteBackground.setTexture(backgroundTexture);
-	spriteBackground.setPosition(0, 0);
+	spriteBackground.setOrigin(0, 0);
+	window.clear();
 	window.draw(spriteBackground);
-
+}
+void Menu::draw(sf::RenderWindow& window, int center)
+{/*
+	sf::Texture backgroundTexture;
+	try {
+		if (!backgroundTexture.loadFromFile("assets/titlescreen-2.png"))
+		{
+			throw - 1;
+		}
+	}
+	catch (int)
+	{
+		std::cout << "Error: Cannot load menu background texture.";
+		exit(1);
+	}
+	//display background
+	sf::Sprite spriteBackground;
+	spriteBackground.setTexture(backgroundTexture);
+	spriteBackground.setOrigin(0, 0);
+	window.draw(spriteBackground);
+	*/
 
 	sf::Texture texture;
 	try {
@@ -296,4 +314,8 @@ void Menu::reset() {
 	sf::Color color(255, 87, 51);
 	menu[selectedItemIndex].setFillColor(color);
 	menu[selectedItemIndex + 1].setFillColor(sf::Color::White);
+}
+
+Menu::~Menu()
+{
 }

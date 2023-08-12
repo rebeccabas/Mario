@@ -7,16 +7,18 @@ int main()
 {
 	Game game;
 	sf::SoundBuffer buffer;
-	sf::Sound sound;
+	sf::Sound bgsound;
+	Menu menuscreen;
 
 	if (!buffer.loadFromFile("assets/bgm.wav")) {
 		//error handling
 		std::cout << "can't find sound file" << std::endl;
 	}
-	sound.setBuffer(buffer);
+	bgsound.setBuffer(buffer);
 
-	if (sound.getStatus() != sf::Sound::Playing) {
-		sound.play();
+	if (bgsound.getStatus() != sf::Sound::Playing) {
+		bgsound.play();
+
 	}
 	game.run();
 	/*

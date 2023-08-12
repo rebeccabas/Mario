@@ -23,7 +23,7 @@ Turtle::Turtle()
 
 	Height = 46;
 	Width = 32;
-	Velocity = 0.25;
+	Velocity = 0.1;
 	velocity = { Velocity ,Velocity };
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
 
