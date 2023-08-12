@@ -21,7 +21,7 @@ Mario::Mario()
  
 
 	sprite.setTexture(texture);
-	startingPosition = { 62,200 };
+	startingPosition = {950,0 };
 	sprite.setPosition(startingPosition);
 	Width = 32;
 	Height = 60;
