@@ -26,6 +26,7 @@
     <ClInclude Include="GameInfo.h" />
     <ClInclude Include="Mario.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Plant1.h" />
     <ClInclude Include="Screenshot.h" />
     <ClInclude Include="Spikey.h" />
     <ClInclude Include="tileMap.h" />
@@ -40,6 +41,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mario.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Plant1.cpp" />
     <ClCompile Include="Screenshot.cpp" />
     <ClCompile Include="Spikey.cpp" />
     <ClCompile Include="tileMap.cpp" />
