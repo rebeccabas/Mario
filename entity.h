@@ -8,6 +8,7 @@ using namespace sf;
 class Entity : public Drawable // Drawable makes possible to use window.draw(Ball)
 {
 protected:
+
 	Texture texture;
 	Sprite sprite;
 	float Width;

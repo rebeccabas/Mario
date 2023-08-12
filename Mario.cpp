@@ -108,7 +108,6 @@ void drawDeathScreen(int center, sf::RenderWindow& window)
 	sprite.setPosition(0,0);
 	window.draw(sprite);
 }
-
 void Mario::goToStart()
 {
 	this->sprite.setPosition(startingPosition);
@@ -143,7 +142,7 @@ void Mario::setBigMario(bool isBig)
 }
 
 void Mario::dead() {
-
+	
 	if (bigMario) {
 		setBigMario(false);
 		reset();
@@ -160,12 +159,9 @@ void Mario::dead() {
 			dieSound.play();
 			lives = 3;
 			isAlive = false;
-			//Game game;
 		}
 	}
 }
-
-
 float Mario::getCurrentTime()
 {
 	return clock.getElapsedTime().asMilliseconds();

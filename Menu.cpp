@@ -53,7 +53,9 @@ void Menu::followMario(int center)
 }
 
 
-
+Menu::~Menu()
+{
+}
 void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
 	sf::Texture backgroundTexture;
@@ -71,8 +73,7 @@ void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 	//display background
 	sf::Sprite spriteBackground;
 	spriteBackground.setTexture(backgroundTexture);
-	spriteBackground.setOrigin(center, 0);
-	window.clear();
+	spriteBackground.setOrigin(0, 0);
 	window.draw(spriteBackground);
 }
 void Menu::draw(sf::RenderWindow& window, int center)
@@ -314,8 +315,4 @@ void Menu::reset() {
 	sf::Color color(255, 87, 51);
 	menu[selectedItemIndex].setFillColor(color);
 	menu[selectedItemIndex + 1].setFillColor(sf::Color::White);
-}
-
-Menu::~Menu()
-{
 }

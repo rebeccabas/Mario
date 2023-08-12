@@ -104,7 +104,7 @@ void Game::update()
 
 			if (mobs.at(i).getIsAlive())
 			{
-				int movingSide = map.collision(mobs.at(i), gameInfo);
+				int movingSide = map.collison(mobs.at(i), gameInfo);
 
 				if (movingSide == LEFT)
 					mobs.at(i).MovingDirectiongLeft();
@@ -116,8 +116,8 @@ void Game::update()
 		}
 	}//
 
-	int marioHit = map.collision(mario, gameInfo);
-	map.collision(mario, gameInfo);
+	int marioHit = map.collison(mario, gameInfo);
+	map.collison(mario, gameInfo);
 	if (marioHit == BOTTOM)	// if mario on the ground he can jump
 	{
 		mario.setCanJump(true);
@@ -157,6 +157,7 @@ void Game::render()
 	// follow mario to display in right place when called
 	gameInfo.followMario(view.getCenter().x);
 	menu.followMario(mario.getPosition().x);
+
 	gameInfo.draw(*window, view.getCenter().x);
 
 	if (mario.getIsAlive())
@@ -176,7 +177,7 @@ void Game::Menu(int center)
 		center = WINDOW_WIDTH / 2;
 
 	menu.followMario(center);
-	menu.drawMenuBackground(*window, 0);
+	menu.drawMenuBackground(*window, center);
 	menu.draw(*window, center);
 
 	if (won)

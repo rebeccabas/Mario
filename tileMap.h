@@ -42,7 +42,7 @@ class TileMap : public sf::Drawable, public sf::Transformable
 public:
 	TileMap();
 	bool load(const std::string& tileset, sf::Vector2u tileSize);
-	int collision(Entity& Entity, GameInfo& gameInfo);	// function returns from what side collision comes from and move object to the opposit side
+	int collison(Entity& Entity, GameInfo& gameInfo);	// function returns from what side collision comes from and move object to the opposit side
 	float min4(float tab[]);
 	void loadArrayFromArray(std::string fileName);
 	int getMapWidth() { return mapWidth; }
