@@ -11,11 +11,11 @@
 #define WINDOW_HEIGHT 512
 
 
-class Plant : public Entity
+class Plant1 : public Entity
 {
 private:
 
 public:
-	Plant();
-	~Plant();
+	Plant1();
+	~Plant1();
 };
