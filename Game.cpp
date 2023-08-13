@@ -340,7 +340,7 @@ void Game::addMobs()
 				wsk = new Plant1;
 
 			else
-				wsk = new Plant2; // if no mobName read from exist take Plant2
+				wsk = new Plant1; // if no mobName read from exist take Plant2
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);
