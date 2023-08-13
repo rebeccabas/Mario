@@ -42,6 +42,9 @@ void Game::intersection(Mario& mario, Entity& entity)
 					{
 						mario.killingMove();
 						entity.dead();
+						stompBuffer.loadFromFile(STOMP_SOUND);
+						stompSound.setBuffer(stompBuffer);
+						stompSound.play();
 						gameInfo.increaseScoreBonus();
 					}
 				}
