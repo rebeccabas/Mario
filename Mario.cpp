@@ -116,9 +116,6 @@ void Mario::goToStart()
 }
 void Mario::killingMove()
 {
-	stompBuffer.loadFromFile(STOMP_SOUND);
-	stompSound.setBuffer(stompBuffer);
-	stompSound.play();
 	this->sprite.move({ 0,-40 });
 }
 

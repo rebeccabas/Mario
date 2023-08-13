@@ -47,6 +47,9 @@
     <ClCompile Include="tileMap.cpp" />
     <ClCompile Include="Turtle.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
