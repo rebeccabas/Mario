@@ -31,6 +31,7 @@
     <ClInclude Include="Spikey.h" />
     <ClInclude Include="tileMap.h" />
     <ClInclude Include="Turtle.h" />
+    <ClInclude Include="Plant2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bonus.cpp" />
@@ -46,6 +47,7 @@
     <ClCompile Include="Spikey.cpp" />
     <ClCompile Include="tileMap.cpp" />
     <ClCompile Include="Turtle.cpp" />
+    <ClCompile Include="Plant2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
