@@ -13,7 +13,6 @@
 #define JUMP_SOUND "assets/JUMP.wav"
 #define DIE_SOUND "assets/die.wav"
 #define HIT_SOUND "assets/hit.wav"
-#define STOMP_SOUND "assets/stomp.wav"
 
 using namespace sf;
 
@@ -22,7 +21,7 @@ class Mario : public Entity
 private:
 	int lives = 3;
 	bool canJump = 0;
-	float jumpHeight = 600;
+	float jumpHeight = 1000;
 	float jumpCurrentPosition = 0;
 	std::chrono::steady_clock::time_point startTime;
 	std::chrono::steady_clock::time_point finishTime;
@@ -36,8 +35,8 @@ private:
 	float dt;
 	sf::View view;
 
-	SoundBuffer jumpBuffer, dieBuffer, hitBuffer, stompBuffer;
-	Sound jumpSound, dieSound, hitSound, stompSound;
+	SoundBuffer jumpBuffer, dieBuffer, hitBuffer;
+	Sound jumpSound, dieSound, hitSound;
 
 
 
