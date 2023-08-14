@@ -71,30 +71,14 @@ void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 	//display background
 	sf::Sprite spriteBackground;
 	spriteBackground.setTexture(backgroundTexture);
-	spriteBackground.setOrigin(0, 0);
-	window.clear();
+	spriteBackground.setPosition(window.getSize().x /2 - WINDOW_WIDTH / 2, 0);
+	
+	window.setView(window.getDefaultView());
 	window.draw(spriteBackground);
 }
 void Menu::draw(sf::RenderWindow& window, int center)
-{/*
-	sf::Texture backgroundTexture;
-	try {
-		if (!backgroundTexture.loadFromFile("assets/titlescreen-2.png"))
-		{
-			throw - 1;
-		}
-	}
-	catch (int)
-	{
-		std::cout << "Error: Cannot load menu background texture.";
-		exit(1);
-	}
-	//display background
-	sf::Sprite spriteBackground;
-	spriteBackground.setTexture(backgroundTexture);
-	spriteBackground.setOrigin(0, 0);
-	window.draw(spriteBackground);
-	*/
+{	
+	drawMenuBackground(window, center);
 
 	sf::Texture texture;
 	try {
@@ -113,14 +97,14 @@ void Menu::draw(sf::RenderWindow& window, int center)
 	sprite.setTexture(texture);
 	sprite.setOrigin({ 190,20 });
 	sprite.setPosition({ (float)center,WINDOW_HEIGHT / 2 });
+	sf::View view(sf::FloatRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT));
+	window.setView(view);
 	window.draw(sprite);
-
 	//display option to choose
 	for (int i = 0; i < MAX_NUMBER_OF_ITEMS; i++)
 	{
 		window.draw(menu[i]);
 	}
-
 }
 
 void Menu::drawBestResults(sf::RenderWindow& window, int center)

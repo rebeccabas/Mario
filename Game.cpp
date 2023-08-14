@@ -261,6 +261,7 @@ void Game::run()
 
 void Game::cameraMovement()
 {
+	//sf::View view = window.getDefaultView();
 	if (mario.getPosition().x != WINDOW_WIDTH / 2)
 		view.setCenter({ mario.getPosition().x, WINDOW_HEIGHT / 2 });
 }

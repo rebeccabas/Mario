@@ -1,5 +1,6 @@
 #pragma once
 #include "SFML/Graphics.hpp"
+#include "Mario.h"
 #include<iostream>
 #include<fstream>
 #include <algorithm>    
@@ -24,6 +25,8 @@ public:
 class Menu
 {
 private:
+	Mario mario;
+	sf::View view;
 	bool isOn = true;
 	int selectedItemIndex = 0;
 	sf::Font font;
@@ -34,10 +37,10 @@ private:
 
 
 public:
-	friend class Mario;
 	Menu();
 	~Menu();
 
+	Sprite loadResources(sf::RenderWindow& window, Sprite spriteBackground);
 	void followMario(int center);
 	void draw(sf::RenderWindow& window, int center);
 	void drawMenuBackground(sf::RenderWindow& window, int center);

@@ -8,7 +8,6 @@ int main()
 	Game game;
 	sf::SoundBuffer buffer;
 	sf::Sound bgsound;
-	Menu menuscreen;
 
 	if (!buffer.loadFromFile("assets/bgm.wav")) {
 		//error handling
