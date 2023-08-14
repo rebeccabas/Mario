@@ -5,7 +5,6 @@
 #include <chrono>
 #include <string>
 #include"entity.h"
-#include "Menu.h"
 
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 512
@@ -42,9 +41,8 @@ private:
 
 	bool keyRel = false;
 
-	Menu menuscreen;
-
 public:
+	friend class Menu;
 	Mario();
 
 	void update(int mapWidth);
