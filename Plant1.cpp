@@ -5,6 +5,7 @@
 Plant1::Plant1()
 {
 	file = "plant.png";
+
 	try
 	{
 		if (!texture.loadFromFile("assets/" + file))/*, sf::IntRect(0, 0, Height, Width)))*/
@@ -24,7 +25,7 @@ Plant1::Plant1()
 	Height = 64;
 	Width = 64;
 	Velocity = 0.0;
-	velocity = { Velocity ,Velocity };
+	velocity = { Velocity ,0 };
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
 
 	isFriendly = false;

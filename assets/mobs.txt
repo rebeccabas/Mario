@@ -1,5 +1,3 @@
-Plant1 1180,220
-Plant1 1950,350
 Turtle 1400,400
 Turtle 2400,100
 Turtle 3432,100
@@ -11,3 +9,5 @@ FlyTur 2200,140
 FlyTur 8000,140
 FlyTur 6200,080
 FlyTur 6600,140
+Plant1 1180,220
+Plant1 1950,350
