@@ -1,6 +1,7 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include<SFML/Window.hpp>
+#include "Mario.h"
 #include <chrono>
 #include<iostream>
 #include<fstream>
@@ -14,7 +15,7 @@ class GameInfo
 	int coins = 0;
 	int time = 0;
 	int score = 0;
-	int lives = 3;
+	Mario mario;
 
 	sf::Font font;
 	sf::Text info[NUMBER_OF_ITEMS];
@@ -37,7 +38,8 @@ public:
 
 	void followMario(int center);
 	void draw(sf::RenderWindow& window, int center);
-	void showLife();
+	void showLife2();
+	void showLife1();
 	int getLife();
 	void resetLife();
 	void reset();

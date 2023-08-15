@@ -42,7 +42,9 @@ private:
 	bool keyRel = false;
 
 public:
+	friend class GameInfo;
 	friend class Menu;
+	friend class Game;
 	Mario();
 
 	void update(int mapWidth);
