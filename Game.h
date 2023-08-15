@@ -11,6 +11,7 @@
 #include"flyTur.h"
 #include"Plant1.h"
 #include "Fire.h"
+#include"Plant2.h"
 
 #include<Windows.h>
 #include<iostream>
