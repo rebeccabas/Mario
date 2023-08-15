@@ -57,12 +57,20 @@ void Game::intersection(Mario& mario, Entity& entity)
 						mario.killingMove();
 						mario.dead();
 
-						int g = gameInfo.getLife();
-						if (g <= 0)
+						//int g = gameInfo.getLife();
+						//if (mario.lives <= 0)
+						//{
+						//	mario.lives = 3;
+						//}
+						if (mario.lives == 2)
 						{
-							gameInfo.resetLife();
+							gameInfo.showLife2();
 						}
-						gameInfo.showLife();
+						else if (mario.lives == 1)
+						{
+							gameInfo.showLife1();
+						}
+
 						if (mario.getIsAlive()) {
 							menu.setIsON(false);
 							view.setCenter(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
