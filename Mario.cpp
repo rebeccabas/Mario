@@ -1,4 +1,5 @@
 #include "Mario.h"
+#include "GameInfo.h"
 
 Mario::Mario()
 {
@@ -80,7 +81,7 @@ void Mario::update(int mapWidth)
 	
 		//twice, Mario can be in 2 lives mode, but this should kill him anyway
 		this->dead();
-		goToStart();
+		//goToStart();
 
 	}
 }

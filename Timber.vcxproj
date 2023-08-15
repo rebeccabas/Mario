@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Bonus.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="Fire.h" />
     <ClInclude Include="flyTur.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameInfo.h" />
@@ -36,6 +37,7 @@
   <ItemGroup>
     <ClCompile Include="Bonus.cpp" />
     <ClCompile Include="entity.cpp" />
+    <ClCompile Include="Fire.cpp" />
     <ClCompile Include="flyTur.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameInfo.cpp" />
