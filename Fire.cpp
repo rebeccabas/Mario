@@ -4,7 +4,7 @@
 
 Fireee::Fireee()
 {
-	file = "fire-1.jpg";
+	file = "fire.jpg";
 
 	try
 	{
