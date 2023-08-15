@@ -40,7 +40,7 @@ GameInfo::GameInfo()
 	info[3].setFont(font);
 	info[3].setFillColor(sf::Color::White);
 	info[3].setCharacterSize(36);
-	info[3].setString("LIVES: " + std::to_string(lives));
+	info[3].setString("LIVES: " + std::to_string(mario.lives));
 }
 
 
@@ -73,27 +73,26 @@ void GameInfo::reset()
 	score = 0;
 	info[0].setString("COINS: " + std::to_string(coins));
 	info[1].setString("SCORE: " + std::to_string(score));
+	info[3].setString("LIVES: " + std::to_string(mario.lives));
 
 	finish = start = std::chrono::high_resolution_clock::now();
 
 }
 
-void GameInfo::showLife()
-{
-	lives--;
-	if (lives <= 0) { resetLife(); }
-	info[3].setString("LIVES: " + std::to_string(lives));
+void GameInfo::showLife2()
+{	
+	info[3].setString("LIVES: " + std::to_string(2));
 }
+
+void GameInfo::showLife1()
+{
+	info[3].setString("LIVES: " + std::to_string(1));
+}
+
 
 int GameInfo::getLife()
 {
-	//info[3].setString("LIVES: " + std::to_string(lives + 1));
-	return lives;
-}
-
-void GameInfo::resetLife()
-{
-	lives = 3;
+	return mario.lives;
 }
 
 void GameInfo::increaseCoins()

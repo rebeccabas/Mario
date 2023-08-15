@@ -80,8 +80,6 @@ void Mario::update(int mapWidth)
 	
 		//twice, Mario can be in 2 lives mode, but this should kill him anyway
 		this->dead();
-		this->dead();
-
 		goToStart();
 
 	}
