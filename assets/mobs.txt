@@ -11,4 +11,6 @@ FlyTur 6200,080
 FlyTur 6600,140
 Plant1 1180,220
 Plant1 1950,350
+Plant2 6500,150
 Fireee 1800,500
+Fireee 3740,500

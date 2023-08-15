@@ -37,6 +37,8 @@ private:
 
 
 public:
+	friend class tileMap;
+
 	Menu();
 	~Menu();
 

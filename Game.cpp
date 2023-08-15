@@ -153,14 +153,28 @@ void Game::update()
 		menu.setIsON(true);
 
 	if (marioHit == END_GAME && !won)
-	{
+	{	/*
 		window->setVisible(false);
 		menu.isON();
 		gameInfo.saveResultToFile();
 		window->setVisible(true);
 		mario.dead();	// die twice, cause mario may have additional life
 		mario.dead();
+		won = true;*/
+
+		//window->setVisible(false);
+		//menu.draw(*window, 0);
+		//gameInfo.saveResultToFile();
+		//menu.isON();
+		mario.isAlive = false;
+		window->clear();
+		mario.lives = 0;
+		mario.goToStart();
+		//window->setVisible(true);
+		//mario.dead();	// die twice, cause mario may have additional life
+		//mario.dead();
 		won = true;
+
 	}
 
 
@@ -203,6 +217,7 @@ void Game::Menu(int center)
 
 	if (won)
 	{
+		mario.lives = 3;
 		menu.gameWon(center, *window);
 		menu.isON();
 	}
@@ -360,8 +375,11 @@ void Game::addMobs()
 			else if (mobName.compare("Plant1") == 0)
 				wsk = new Plant1;
 
+			else if (mobName.compare("Plant2") == 0)
+				wsk = new Plant2;
+
 			else
-				wsk = new Fireee; // if no mobName read from exist take Plant2
+				wsk = new Fireee; // if no mobName read from exist take Fireee
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);

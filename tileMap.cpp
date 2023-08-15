@@ -1,4 +1,5 @@
 #include "tileMap.h"
+#include "Menu.h"
 
 TileMap::TileMap()
 {
@@ -129,6 +130,7 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 						//}
 						if (tiles[i * width + j] == 9)		// if END game
 						{
+							gameInfo.reset();
 							winSound.play();
 							return 9;
 						}

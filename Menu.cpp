@@ -287,11 +287,20 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 		exit(1);
 	}
 	//display background
-	sf::Sprite sprite;
+	/*sf::Sprite sprite;
 	sprite.setTexture(texture);
-	sprite.setOrigin({ 190,101 });
+	//sprite.setOrigin({ 190,101 });
+	sprite.setOrigin({ 0,0  });
 	sprite.setPosition({ (float)center, 450 });
 	window.draw(sprite);
+	*/
+
+	sf::Sprite winBackground;
+	winBackground.setTexture(texture);
+	winBackground.setPosition(window.getSize().x / 2 - WINDOW_WIDTH / 2, 0);
+
+	window.setView(window.getDefaultView());
+	window.draw(winBackground);
 }
 void Menu::reset() {
 	selectedItemIndex = 0;
