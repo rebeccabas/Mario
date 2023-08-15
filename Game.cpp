@@ -217,6 +217,7 @@ void Game::Menu(int center)
 
 	if (won)
 	{
+		mario.lives = 3;
 		menu.gameWon(center, *window);
 		menu.isON();
 	}
