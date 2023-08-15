@@ -33,6 +33,8 @@ class GameInfo
 
 	std::string userName;
 public:
+	friend class Mario;
+	friend class Game;
 	GameInfo();
 	~GameInfo();
 
@@ -41,7 +43,6 @@ public:
 	void showLife2();
 	void showLife1();
 	int getLife();
-	void resetLife();
 	void reset();
 
 	void increaseCoins();

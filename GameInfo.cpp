@@ -16,7 +16,7 @@ GameInfo::GameInfo()
 	}
 	catch (int)
 	{
-		std::cout << "can not load mario texture";
+		std::cout << "can not load font texture";
 		exit(1);
 	}
 

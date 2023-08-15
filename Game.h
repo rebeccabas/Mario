@@ -10,6 +10,7 @@
 #include"Spikey.h"
 #include"flyTur.h"
 #include"Plant1.h"
+#include "Fire.h"
 
 #include<Windows.h>
 #include<iostream>
@@ -35,7 +36,6 @@ class Game
 	GameInfo gameInfo;
 	Menu menu;
 	Screenshot screenshot;
-	sf::View view;
 
 	sf::RenderWindow* window;
 	sf::Event sfEvent;
@@ -50,6 +50,7 @@ class Game
 	bool won = false;
 
 public:
+	sf::View view;
 	friend class Mario;
 	// constructors/destructors
 	Game();

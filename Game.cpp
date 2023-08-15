@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "GameInfo.h"
 
 Game::Game()
 {
@@ -57,11 +58,6 @@ void Game::intersection(Mario& mario, Entity& entity)
 						mario.killingMove();
 						mario.dead();
 
-						//int g = gameInfo.getLife();
-						//if (mario.lives <= 0)
-						//{
-						//	mario.lives = 3;
-						//}
 						if (mario.lives == 2)
 						{
 							gameInfo.showLife2();
@@ -70,6 +66,11 @@ void Game::intersection(Mario& mario, Entity& entity)
 						{
 							gameInfo.showLife1();
 						}
+						/*else if (mario.lives == 0)
+						{
+							mario.dieSound.play();
+							gameInfo.reset();
+						}*/
 
 						if (mario.getIsAlive()) {
 							menu.setIsON(false);
@@ -123,6 +124,17 @@ void Game::update()
 
 				mobs.at(i).update();
 			}
+		}
+
+		if (mario.bottom() > WINDOW_HEIGHT)//mario falling off
+		{
+
+			//twice, Mario can be in 2 lives mode, but this should kill him anyway
+			//this->dead();
+			//this->dead();
+			//this->dead();
+			mario.lives = 0;
+			mario.dieSound.play();
 		}
 	}//
 
@@ -349,7 +361,7 @@ void Game::addMobs()
 				wsk = new Plant1;
 
 			else
-				wsk = new Plant1; // if no mobName read from exist take Plant2
+				wsk = new Fireee; // if no mobName read from exist take Plant2
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);

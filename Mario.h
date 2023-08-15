@@ -32,11 +32,10 @@ private:
 	float flPreviousTime = 0;
 	float flCurrentTime = 0;
 	float dt;
-	sf::View view;
+	sf::Text info;
 
 	SoundBuffer jumpBuffer, dieBuffer, hitBuffer;
 	Sound jumpSound, dieSound, hitSound;
-
 
 
 	bool keyRel = false;
