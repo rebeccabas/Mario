@@ -38,7 +38,7 @@ class Game
 	Menu menu;
 	Screenshot screenshot;
 
-	sf::RenderWindow* window;
+	
 	sf::Event sfEvent;
 
 	DWORD currentTickCount;
@@ -51,6 +51,7 @@ class Game
 	bool won = false;
 
 public:
+	sf::RenderWindow* window;
 	sf::View view;
 	friend class Mario;
 	// constructors/destructors

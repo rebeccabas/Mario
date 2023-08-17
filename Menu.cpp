@@ -30,7 +30,7 @@ Menu::Menu()
 	menu[2].setFillColor(sf::Color::White);
 	menu[2].setString("SCOREBOARD");
 	readResultsFromFile();
-	loadReslutsToArray();
+	loadResultsToArray();
 
 
 	menu[3].setFont(font);
@@ -137,7 +137,7 @@ void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
 
 	sf::Sprite sprite;
 	sprite.setTexture(texture);
-	sprite.setOrigin(747 / 2, 103 / 2);
+	sprite.setOrigin(717 / 2, 103 / 2);
 	sprite.setPosition({ (float)center,WINDOW_HEIGHT / 6 });
 	window.draw(sprite);
 }
@@ -244,7 +244,7 @@ void Menu::readResultsFromFile()
 	sortResults();
 }
 
-void Menu::loadReslutsToArray()
+void Menu::loadResultsToArray()
 {
 	readResultsFromFile();
 	int numberOFResults = NUMBER_OF_RESULTS;

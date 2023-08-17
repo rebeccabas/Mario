@@ -1,28 +1,58 @@
-﻿  Game.cpp
-E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'TOP': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
-E:\MarioClone\MarioClone\Game.h(25,1): warning C4005: 'BOTTOM': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
-E:\MarioClone\MarioClone\Game.cpp(194,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+﻿  Menu.cpp
+E:\MarioClone\MarioClone\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Game.cpp(195,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(46,101): warning C4305: 'argument': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Game.cpp(196,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(46,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Game.cpp(288,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Game.cpp(363,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-E:\MarioClone\MarioClone\Game.cpp(364,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(48,101): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(48,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(50,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(51,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(52,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(74,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(252,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(300,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

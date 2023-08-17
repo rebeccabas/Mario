@@ -37,7 +37,6 @@ private:
 	SoundBuffer jumpBuffer, dieBuffer, hitBuffer;
 	Sound jumpSound, dieSound, hitSound;
 
-
 	bool keyRel = false;
 
 public:
