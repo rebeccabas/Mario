@@ -1,4 +1,74 @@
-﻿  Menu.cpp
+﻿  Game.cpp
+E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(25,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+E:\MarioClone\MarioClone\Game.cpp(212,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Game.cpp(213,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Game.cpp(214,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Game.cpp(306,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Game.cpp(381,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(382,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  GameInfo.cpp
+E:\MarioClone\MarioClone\GameInfo.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\GameInfo.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\GameInfo.cpp(55,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\GameInfo.cpp(56,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Mario.cpp
+E:\MarioClone\MarioClone\Mario.cpp(69,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(92,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(113,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(118,19): warning C4305: '=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(257,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+  Menu.cpp
 E:\MarioClone\MarioClone\Menu.cpp(45,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
@@ -55,4 +125,131 @@ E:\MarioClone\MarioClone\Menu.cpp(300,51): warning C4244: 'argument': conversion
           [
               T=unsigned int
           ]
+  main.cpp
+E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(25,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+  tileMap.cpp
+E:\MarioClone\MarioClone\tileMap.cpp(55,54): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(55,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(56,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(56,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(57,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(57,44): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(58,60): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(58,38): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(61,57): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(61,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(62,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(62,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(63,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(63,46): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(64,63): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(64,40): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\tileMap.cpp(79,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(80,14): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(81,15): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(82,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(90,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(153,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(186,24): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+E:\MarioClone\MarioClone\tileMap.cpp(188,21): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

@@ -1,6 +1,7 @@
 #include "Mario.h"
 #include "GameInfo.h"
 #include <stdlib.h>
+#include <math.h>
 
 Mario::Mario()
 {
@@ -27,7 +28,7 @@ Mario::Mario()
 	sprite.setPosition(startingPosition);
 	Width = 32;
 	Height = 60;
-	Velocity = 0.4;
+	Velocity = 0.5;
 	sprite.setOrigin(Width / 2.f, (Height / 2.f)+4);
 
 	jumpBuffer.loadFromFile(JUMP_SOUND);
@@ -46,9 +47,50 @@ void Mario::update(int mapWidth)
 	this->sprite.move(this->velocity);
 
 	if (Keyboard::isKeyPressed(Keyboard::Key::Left) && this->left() > 0)
-		velocity.x = -Velocity+0.2;
+	{
+		if (!bigMario)
+			file = "mario-left.png";
+		else
+			file = "bigMario-left.png";
+
+		try
+		{
+			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			{
+				throw - 1;
+			}
+		}
+		catch (int)
+		{
+			std::cout << "Error: Cannot load  Mario texture.";
+			exit(1);
+		}
+		sprite.setTexture(texture);
+		velocity.x = -Velocity + 0.2;
+	}
+
 	else if (Keyboard::isKeyPressed(Keyboard::Key::Right) && this->right() < mapWidth)
-		velocity.x = Velocity-0.2;
+	{
+		if (!bigMario)
+			file = "mario.png";
+		else
+			file = "bigMario.png";
+
+		try
+		{
+			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			{
+				throw - 1;
+			}
+		}
+		catch (int)
+		{
+			std::cout << "Error: Cannot load  Mario texture.";
+			exit(1);
+		}
+		sprite.setTexture(texture);
+		velocity.x = Velocity - 0.2;
+	}
 	else
 		velocity.x = 0;
 
@@ -67,7 +109,8 @@ void Mario::update(int mapWidth)
 			keyRel = false;
 		}
 		jumpCurrentPosition++;
-		velocity.y = -(Velocity) * (1 - (jumpCurrentPosition * 1.4) / jumpHeight);
+		//velocity.y = -(Velocity) * (1 - (jumpCurrentPosition * 1.4) / jumpHeight);
+		velocity.y = -(Velocity) * (0.95 - (jumpCurrentPosition * 1.4) / jumpHeight);
 	}
 	else
 	{
@@ -131,15 +174,47 @@ bool Mario::isBig()
 
 void Mario::setBigMario(bool isBig)
 {
+
 	if (bigMario = isBig)
 	{
-		sprite.setScale(1.3, 1);
-		Width *= 1.3;
+		file = "bigMario.png";
+
+		try
+		{
+			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			{
+				throw - 1;
+			}
+		}
+		catch (int)
+		{
+			std::cout << "Error: Cannot load big Mario texture.";
+			exit(1);
+		}
+		sprite.setTexture(texture);
+
+		//sprite.setScale(1.3, 1);
+		//Width *= 1.3;
 	}
 	else
 	{
-		sprite.setScale(32 / Width, 1);
-		Width = 32;
+		file = "mario.png";
+
+		try
+		{
+			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			{
+				throw - 1;
+			}
+		}
+		catch (int)
+		{
+			std::cout << "Error: Cannot load big Mario texture.";
+			exit(1);
+		}
+		sprite.setTexture(texture);
+		//sprite.setScale(32 / Width, 1);
+		//Width = 32;
 	}
 }
 
@@ -160,16 +235,17 @@ void Mario::dead() {
 		{
 			GameInfo gameInfo;
 
-			sf::Time delayTime = sf::milliseconds(200);
-			sf::RenderWindow window;
-			window.setVisible(false);
+			//sf::Time delayTime = sf::milliseconds(200);
+			
+			dieSound.play();
+			isAlive = false;
 
 			gameInfo.saveResultToFile();
-			window.setVisible(true);
+		
 
-			dieSound.play();
+			
 			lives = 3;
-			isAlive = false;
+			
 			//Game game;
 		}
 	}
