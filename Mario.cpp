@@ -1,5 +1,6 @@
 #include "Mario.h"
 #include "GameInfo.h"
+#include <stdlib.h>
 
 Mario::Mario()
 {
@@ -157,6 +158,15 @@ void Mario::dead() {
 		}
 		else
 		{
+			GameInfo gameInfo;
+
+			sf::Time delayTime = sf::milliseconds(200);
+			sf::RenderWindow window;
+			window.setVisible(false);
+
+			gameInfo.saveResultToFile();
+			window.setVisible(true);
+
 			dieSound.play();
 			lives = 3;
 			isAlive = false;

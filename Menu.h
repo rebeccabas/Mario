@@ -56,7 +56,7 @@ public:
 	bool isON();
 	void setIsON(bool status);
 	void readResultsFromFile();
-	void loadReslutsToArray();
+	void loadResultsToArray();
 	static bool comparator(result i1, result i2);
 	void sortResults();
 

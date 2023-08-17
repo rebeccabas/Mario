@@ -135,6 +135,7 @@ void Game::update()
 			//this->dead();
 			mario.lives = 0;
 			mario.dieSound.play();
+
 		}
 	}//
 
@@ -153,7 +154,18 @@ void Game::update()
 		menu.setIsON(true);
 
 	if (marioHit == END_GAME && !won)
-	{	/*
+	{	
+		sf::Time delayTime = sf::milliseconds(200);
+		mario.isAlive = false;
+		window->clear();
+		window->setVisible(false);
+		mario.lives = 0;
+		mario.goToStart();
+		menu.isON();
+		gameInfo.saveResultToFile();
+		window->setVisible(true);
+		sf::sleep(delayTime);
+		/*
 		window->setVisible(false);
 		menu.isON();
 		gameInfo.saveResultToFile();
@@ -166,10 +178,16 @@ void Game::update()
 		//menu.draw(*window, 0);
 		//gameInfo.saveResultToFile();
 		//menu.isON();
+
+
+	/*
 		mario.isAlive = false;
 		window->clear();
 		mario.lives = 0;
 		mario.goToStart();
+	*/
+
+
 		//window->setVisible(true);
 		//mario.dead();	// die twice, cause mario may have additional life
 		//mario.dead();
@@ -249,7 +267,7 @@ void Game::Menu(int center)
 					if (mario.getIsAlive() == false)
 					{
 						menu.setPressedItem(1);
-						menu.loadReslutsToArray();
+						menu.loadResultsToArray();
 					}
 					else
 						menu.setIsON(false);

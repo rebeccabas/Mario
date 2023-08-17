@@ -30,7 +30,6 @@ class GameInfo
 	time_t czas;	// time in seconds count from 1970 year
 	std::string localData;	// time in standard format example "Thu Jan 01 01:00:00 1970"
 	std::string fileExtension = ".png";
-
 	std::string userName;
 public:
 	friend class Mario;

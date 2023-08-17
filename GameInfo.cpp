@@ -186,4 +186,5 @@ void GameInfo::typeUserName()
 		}
 	}
 	this->userName = userName;
+	system("CLS");
 }
