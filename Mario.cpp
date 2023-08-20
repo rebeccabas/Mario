@@ -41,7 +41,6 @@ Mario::Mario()
 	hitSound.setBuffer(hitBuffer);
 }
 
-
 void Mario::update(int mapWidth)
 {
 	this->sprite.move(this->velocity);
@@ -62,13 +61,12 @@ void Mario::update(int mapWidth)
 		}
 		catch (int)
 		{
-			std::cout << "Error: Cannot load  Mario texture.";
+			std::cout << "Error: Cannot load Mario texture.";
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = -Velocity + 0.2;
+		velocity.x = -0.8f; // Adjusted leftward velocity while jumping
 	}
-
 	else if (Keyboard::isKeyPressed(Keyboard::Key::Right) && this->right() < mapWidth)
 	{
 		if (!bigMario)
@@ -85,20 +83,20 @@ void Mario::update(int mapWidth)
 		}
 		catch (int)
 		{
-			std::cout << "Error: Cannot load  Mario texture.";
+			std::cout << "Error: Cannot load Mario texture.";
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = Velocity - 0.2;
+		velocity.x = 0.8f; // Adjusted rightward velocity while jumping
 	}
 	else
-		velocity.x = 0;
+		velocity.x = 0.0f;
 
-	if (Keyboard::isKeyPressed(Keyboard::Key::Up) && canJump) {
+	if (Keyboard::isKeyPressed(Keyboard::Key::Up) && canJump)
+	{
 		keyRel = true;
 		jumpSound.play();
 	}
-
 
 	if (keyRel && this->top() > 0 && canJump)
 	{
@@ -109,17 +107,16 @@ void Mario::update(int mapWidth)
 			keyRel = false;
 		}
 		jumpCurrentPosition++;
-		
-		velocity.y = -(Velocity) * (0.95 - (jumpCurrentPosition * 1.4) / jumpHeight);
+
+		velocity.y = -0.8f; // Adjusted upward jump velocity
 	}
 	else
 	{
 		jumpCurrentPosition = 0;
-		velocity.y = 0.4;
+		velocity.y = 0.3f; // Adjusted falling velocity
 		canJump = false;
 		keyRel = false;
 	}
-
 	if (this->bottom() > WINDOW_HEIGHT)//mario falling off
 	{
 	

@@ -1,5 +1,5 @@
-#include<SFML/Graphics.hpp>
-#include<SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 #include <iostream>
 #include "Game.h"
 
@@ -23,3 +23,8 @@ int main()
     game.run();
     return 0;
 }
+
+
+
+
+
