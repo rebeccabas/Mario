@@ -109,7 +109,7 @@ void Mario::update(int mapWidth)
 			keyRel = false;
 		}
 		jumpCurrentPosition++;
-		//velocity.y = -(Velocity) * (1 - (jumpCurrentPosition * 1.4) / jumpHeight);
+		
 		velocity.y = -(Velocity) * (0.95 - (jumpCurrentPosition * 1.4) / jumpHeight);
 	}
 	else
@@ -235,18 +235,13 @@ void Mario::dead() {
 		{
 			GameInfo gameInfo;
 
-			//sf::Time delayTime = sf::milliseconds(200);
-			
 			dieSound.play();
 			isAlive = false;
 
 			gameInfo.saveResultToFile();
-		
 
-			
 			lives = 3;
 			
-			//Game game;
 		}
 	}
 }

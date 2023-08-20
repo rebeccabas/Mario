@@ -70,5 +70,6 @@ public:
 	void drawMobs();
 	void Bonuses();
 	void addMobs();
+
 };
 

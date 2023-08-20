@@ -1,11 +1,78 @@
-﻿  main.cpp
-E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'TOP': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
-E:\MarioClone\MarioClone\Game.h(25,1): warning C4005: 'BOTTOM': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+﻿  Menu.cpp
+E:\MarioClone\MarioClone\Menu.cpp(50,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(51,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(52,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(56,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(57,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(58,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(80,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(147,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(283,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(323,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
   Generating code
-  7 of 1220 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  1 of 1221 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    18 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
+flyTur.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+flyTur.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+flyTur.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+Game.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+GameInfo.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+main.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+Mario.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+Spikey.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+Spikey.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+Plant2.obj : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+sfml-graphics.lib(sfml-graphics-2.dll) : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+sfml-graphics.lib(sfml-graphics-2.dll) : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+sfml-graphics.lib(sfml-graphics-2.dll) : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+sfml-graphics.lib(sfml-graphics-2.dll) : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
+sfml-graphics.lib(sfml-graphics-2.dll) : warning LNK4020: a type record in '' is corrupted; some symbols and types may not be accessible from the debugger
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Release\Mario.exe

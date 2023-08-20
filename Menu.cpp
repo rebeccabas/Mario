@@ -32,20 +32,26 @@ Menu::Menu()
 	readResultsFromFile();
 	loadResultsToArray();
 
-
 	menu[3].setFont(font);
 	menu[3].setFillColor(sf::Color::White);
-	menu[3].setString("EXIT");
+	menu[3].setString("HELP");
+
+	menu[4].setFont(font);
+	menu[4].setFillColor(sf::Color::White);
+	menu[4].setString("EXIT");
+
+	
 
 	selectedItemIndex = 0;
 }
 
 void Menu::followMario(int center)
 {
-	menu[0].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.25 + 130));
-	menu[1].setPosition(sf::Vector2f(center - 55, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.6 + 130));
-	menu[2].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2 + 130));
-	menu[3].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.4 + 130));
+	menu[0].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.25 + 138));
+	menu[1].setPosition(sf::Vector2f(center - 55, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.6 + 138));
+	menu[2].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2 + 138));
+	menu[3].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.4 + 138));
+	menu[4].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.8 + 138));
 
 	resultsToDisplay[0].setPosition(sf::Vector2f(center - 343, 45));
 	resultsToDisplay[1].setPosition(sf::Vector2f(center - 342, 70));
@@ -120,6 +126,30 @@ void Menu::drawResults(sf::RenderWindow& window, int center)
 		window.draw(resultsToDisplay[i]);
 	}
 }
+
+void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
+	sf::Texture texture;
+	try {
+		if (!texture.loadFromFile("assets/help-01.png"))
+		{
+			throw - 1;
+		}
+	}
+	catch (int)
+	{
+		std::cout << "can not load winning background texture";
+		exit(1);
+	}
+
+	sf::Sprite winBackground;
+	winBackground.setTexture(texture);
+	winBackground.setPosition(window.getSize().x / 2 - WINDOW_WIDTH / 2, 0);
+
+	window.setView(window.getDefaultView());
+	window.draw(winBackground);
+
+}
+
 
 void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
 	sf::Texture texture;
@@ -257,7 +287,7 @@ void Menu::loadResultsToArray()
 		resultsToDisplay[i].setString(toDisplay);
 
 		resultsToDisplay[i].setFont(font);
-		resultsToDisplay[i].setFillColor(sf::Color::Black);
+		resultsToDisplay[i].setFillColor(sf::Color::White);
 		resultsToDisplay[i].setCharacterSize(20);
 	}
 }
@@ -286,14 +316,6 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 		std::cout << "can not load winning background texture";
 		exit(1);
 	}
-	//display background
-	/*sf::Sprite sprite;
-	sprite.setTexture(texture);
-	//sprite.setOrigin({ 190,101 });
-	sprite.setOrigin({ 0,0  });
-	sprite.setPosition({ (float)center, 450 });
-	window.draw(sprite);
-	*/
 
 	sf::Sprite winBackground;
 	winBackground.setTexture(texture);
