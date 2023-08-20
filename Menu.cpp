@@ -283,7 +283,7 @@ void Menu::loadResultsToArray()
 
 	for (int i = 0; i < numberOFResults; i++)
 	{
-		std::string toDisplay = std::to_string(i + 1) + ". Score: " + loadedResults.at(i).score + " coins: " + loadedResults.at(i).coins + " time " + loadedResults.at(i).time + "   " + loadedResults.at(i).date + " " + loadedResults.at(i).userName;
+		std::string toDisplay = std::to_string(i + 1) + ". Score: " + loadedResults.at(i).score + "   coins: " + loadedResults.at(i).coins + " time " + loadedResults.at(i).time + "    " + loadedResults.at(i).userName;
 		resultsToDisplay[i].setString(toDisplay);
 
 		resultsToDisplay[i].setFont(font);
