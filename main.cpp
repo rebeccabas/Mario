@@ -5,20 +5,21 @@
 
 int main()
 {
-	Game game;
-	sf::SoundBuffer buffer;
-	sf::Sound bgsound;
+    Game game;
+    sf::SoundBuffer buffer;
+    sf::Sound bgsound;
 
-	if (!buffer.loadFromFile("assets/bgm.wav")) {
-		//error handling
-		std::cout << "can't find sound file" << std::endl;
-	}
-	bgsound.setBuffer(buffer);
+    if (!buffer.loadFromFile("assets/bgm.wav")) {
+        // error handling
+        std::cout << "Can't find sound file" << std::endl;
+    }
+    bgsound.setBuffer(buffer);
 
-	if (bgsound.getStatus() != sf::Sound::Playing) {
-		bgsound.play();
+    if (bgsound.getStatus() != sf::Sound::Playing) {
+        bgsound.setLoop(true);  // Set the sound to loop
+        bgsound.play();
+    }
 
-	}
-	game.run();
-	return 0;
+    game.run();
+    return 0;
 }
