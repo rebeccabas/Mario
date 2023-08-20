@@ -101,11 +101,36 @@ void Game::updateSFMLEvents()
 			}
 		}
 	}
+
 }
 
 void Game::update()
 {
 	this->updateSFMLEvents();
+
+	if (!mario.isAlive)
+	{
+		sf::Texture backgroundTexture;
+		try {
+			if (!backgroundTexture.loadFromFile("assets/deathscreen.png"))
+			{
+				throw - 1;
+			}
+		}
+		catch (int)
+		{
+			std::cout << "Error: Cannot load death background texture.";
+			exit(1);
+		}
+
+		//display background
+		sf::Sprite spriteBackground;
+		spriteBackground.setTexture(backgroundTexture);
+		spriteBackground.setPosition(window->getSize().x / 2 - WINDOW_WIDTH / 2, 0);
+
+		window->setView(window->getDefaultView());
+		window->draw(spriteBackground);
+	}
 
 	for (int i = 0; i < mobs.size(); i++)
 	{
@@ -243,6 +268,11 @@ void Game::Menu(int center)
 	if (menu.GetPressedItem() == 2)
 	{
 		menu.drawBestResults(*window, center);
+	}
+
+	if (menu.GetPressedItem() == 3)
+	{
+		menu.drawHelpMenu(*window, center);
 	}
 	this->window->display();
 	while (window->pollEvent(sfEvent))
