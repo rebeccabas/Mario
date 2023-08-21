@@ -14,5 +14,5 @@ E:\MarioClone\MarioClone\Mario.cpp(111,28): warning C4244: '=': conversion from 
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Mario.cpp(249,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Mario.cpp(247,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

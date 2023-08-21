@@ -113,7 +113,7 @@ void Mario::update(int mapWidth)
 	else
 	{
 		jumpCurrentPosition = 0;
-		velocity.y = 0.3f; // Adjusted falling velocity
+		velocity.y = 0.55f; // Adjusted falling velocity
 		canJump = false;
 		keyRel = false;
 	}
