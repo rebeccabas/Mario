@@ -119,8 +119,6 @@ void Mario::update(int mapWidth)
 	}
 	if (this->bottom() > WINDOW_HEIGHT)//mario falling off
 	{
-	
-		//twice, Mario can be in 2 lives mode, but this should kill him anyway
 		this->dead();
 		//goToStart();
 
