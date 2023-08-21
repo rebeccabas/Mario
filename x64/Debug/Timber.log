@@ -1,6 +1,18 @@
-﻿  main.cpp
-E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'TOP': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
-E:\MarioClone\MarioClone\Game.h(25,1): warning C4005: 'BOTTOM': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+﻿  Mario.cpp
+E:\MarioClone\MarioClone\Mario.cpp(68,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(90,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(111,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Mario.cpp(249,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe
