@@ -65,7 +65,7 @@ void Mario::update(int mapWidth)
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = -0.8f; // Adjusted leftward velocity while jumping
+		velocity.x = -Velocity + 0.2; // Adjusted leftward velocity while jumping
 	}
 	else if (Keyboard::isKeyPressed(Keyboard::Key::Right) && this->right() < mapWidth)
 	{
@@ -87,7 +87,7 @@ void Mario::update(int mapWidth)
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = 0.8f; // Adjusted rightward velocity while jumping
+		velocity.x = Velocity - 0.2; // Adjusted rightward velocity while jumping
 	}
 	else
 		velocity.x = 0.0f;
@@ -108,12 +108,12 @@ void Mario::update(int mapWidth)
 		}
 		jumpCurrentPosition++;
 
-		velocity.y = -0.8f; // Adjusted upward jump velocity
+		velocity.y = -(Velocity) * (0.95 - (jumpCurrentPosition * 1.4) / jumpHeight); // Adjusted upward jump velocity
 	}
 	else
 	{
 		jumpCurrentPosition = 0;
-		velocity.y = 0.3f; // Adjusted falling velocity
+		velocity.y = 0.55f; // Adjusted falling velocity
 		canJump = false;
 		keyRel = false;
 	}
