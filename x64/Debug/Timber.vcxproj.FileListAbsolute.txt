@@ -1,1 +1,2 @@
 E:\MarioClone\MarioClone\x64\Debug\Mario.exe
+C:\Users\Dell\source\repos\Mario\x64\Debug\Mario.exe
