@@ -116,12 +116,34 @@ void GameInfo::increaseCoins()
 void GameInfo::increaseScoreBonus()
 {
 	score += 50;
+
+	std::ofstream outputFile("results/score.txt"); // Open the file for writing
+
+	if (!outputFile.is_open()) {
+		std::cerr << "Failed to open the output file." << std::endl;
+	}
+
+	outputFile << score; // Write the value of time to the output file
+	outputFile.close();  // Close the output file
+
+
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
 void GameInfo::increaseScoreCoins()
 {
 	score += 10;
+
+	std::ofstream outputFile("results/score.txt"); // Open the file for writing
+
+	if (!outputFile.is_open()) {
+		std::cerr << "Failed to open the output file." << std::endl;
+	}
+
+	outputFile << score; // Write the value of time to the output file
+	outputFile.close();  // Close the output file
+
+
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
