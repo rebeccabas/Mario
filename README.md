@@ -64,4 +64,3 @@ Takes care of camera movements (cameraMovement()).
 Every object belonging to **_entity_** class is kept in std::vector<Entity> mobs, loaded from assets/mobs.txt file.<br>
 **_GameInfo_** class is responsible for counting user score, amount of coins gathered and time passed. Result is saved into the text file after finishing the game.
 <br>Class **_Menu_** loads 3 best results after choosing option Best Results in menu.
-<br>By clicking F1 key user can create screenshot saved in screenshot folder.
