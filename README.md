@@ -48,7 +48,7 @@ Way mobs are stored:
 Available mobs names are: Turtle, Spikey, FlyTur, Bonus.
 
 <p align="center">
-  <img width="30%" src="images/mobs/map.PNG">
+  <img width="30%" src="images/mobs.png">
 </p>
 
 # Specification:
