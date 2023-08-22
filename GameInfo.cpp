@@ -98,6 +98,17 @@ int GameInfo::getLife()
 void GameInfo::increaseCoins()
 {
 	coins++;
+
+	std::ofstream outputFile("results/coins.txt"); // Open the file for writing
+
+	if (!outputFile.is_open()) {
+		std::cerr << "Failed to open the output file." << std::endl;
+	}
+
+	outputFile << coins; // Write the value of time to the output file
+	outputFile.close();  // Close the output file
+
+
 	increaseScoreCoins();
 	info[0].setString("COINS: " + std::to_string(coins));
 }
