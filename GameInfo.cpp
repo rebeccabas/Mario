@@ -129,17 +129,22 @@ void GameInfo::countTime()
 
 void GameInfo::saveResultToFile()
 {
-	typeUserName();
-	score = score - (time * 5);
-	if (score < 0)
-		score = 0;
-	std::time(&czas);
-	localData = ctime(&czas);
+    typeUserName();
+    score = score - (time * 5);
+    if (score < 0)
+        score = 0;
+    std::time(&czas);
+    localData = ctime(&czas);
 
-	std::ofstream myfile;
-	myfile.open("../results/Results.txt", std::ios::app);
-	myfile << localData << "Coins: " << properFormat3(coins) << " Score: " << properFormat4(score) << " Time: " << properFormat3(time) << " " << userName << std::endl << std::endl;
-	myfile.close();
+    std::ofstream myfile;
+    myfile.open("results/Results.txt", std::ios::app);
+    
+    if (myfile.is_open()) { // Check if the file was opened successfully
+        myfile << localData << "Coins: " << properFormat3(coins) << " Score: " << properFormat4(score) << " Time: " << properFormat3(time) << " " << userName << std::endl << std::endl;
+        myfile.close();
+    } else {
+        std::cerr << "Error opening the file." << std::endl;
+    }
 }
 
 std::string GameInfo::properFormat3(int number) // return 3 numbers 3 -> 003, 49 -> 049, 234 -> 234
