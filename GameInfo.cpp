@@ -132,6 +132,17 @@ void GameInfo::countTime()
 	if (switcher != difference)
 	{
 		time++;
+
+		std::ofstream outputFile("results/time.txt"); // Open the file for writing
+
+		if (!outputFile.is_open()) {
+			std::cerr << "Failed to open the output file." << std::endl;
+		}
+
+		outputFile << time; // Write the value of time to the output file
+		outputFile.close();  // Close the output file
+
+
 		start = std::chrono::high_resolution_clock::now();
 	}
 
