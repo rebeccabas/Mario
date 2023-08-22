@@ -4,7 +4,7 @@ Coded by Nijiya, Rubika and Sadhana for OOP Project BCT(II/I).
 
 ## Description:
 Join Mario on another epic adventure.
-Run, jump and race against time to reach the finish point. Battle foes and collect voins and bonuses along the way. 
+Run, jump and race against time to reach the finish point. Battle foes and collect coins and bonuses along the way. 
 
 Mario is controlled using keyboard arrows. 
 
@@ -25,7 +25,7 @@ Mario is controlled using keyboard arrows.
 </p>
 
 <p align="center">
-  <img width="80%" src="images/gameplay/help.png">
+  <img width="80%" src="images/gameplay/win.png">
 </p>
 
 ## Map Manipulation
