@@ -147,11 +147,26 @@ void GameInfo::saveResultToFile()
     std::time(&czas);
     localData = ctime(&czas);
 
+	int coinsf;
+	std::ifstream coinsFile("results/coins.txt"); // Open the file for reading
+	if (!coinsFile.is_open()) {
+		std::cerr << "Failed to open coins.txt" << std::endl;
+	}
+	if (coinsFile >> coinsf) {
+		std::cout << "Read coins: " << coinsf << std::endl;
+	}
+	else {
+		std::cerr << "Failed to read the number from the file." << std::endl;
+	}
+	coinsFile.close(); // Close the file
+
+
+
     std::ofstream myfile;
     myfile.open("results/Results.txt", std::ios::app);
     
     if (myfile.is_open()) { // Check if the file was opened successfully
-        myfile << localData << "Coins: " << properFormat3(coins) << " Score: " << properFormat4(score) << " Time: " << properFormat3(time) << " " << userName << std::endl << std::endl;
+        myfile << localData << "Coins: " << properFormat3(coinsf) << " Score: " << properFormat4(score) << " Time: " << properFormat3(time) << " " << userName << std::endl << std::endl;
         myfile.close();
     } else {
         std::cerr << "Error opening the file." << std::endl;
