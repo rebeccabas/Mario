@@ -44,8 +44,8 @@ Every number corresponds with every image block taken from template. Game loads 
 #### Mobs:
 Mobs are built based on assets/mobs.txt file.
 Way mobs are stored:
-[mob_name] [px_on_X_as_axis], [px_on_Y_as_axis]
-Avaliable mobs names are: Turtle, Spikey, FlyTur, Bonus.
+[mob_name] [x-coordinates], [y-coordinates]
+Available mobs names are: Turtle, Spikey, FlyTur, Bonus.
 
 <p align="center">
   <img width="30%" src="images/mobs/map.PNG">
@@ -58,7 +58,7 @@ Avaliable mobs names are: Turtle, Spikey, FlyTur, Bonus.
 </p>
 
 ## Description:
-**_Games_** class is the main game controller. Responsible for adding mobs, triggering tileMap class map managament, updating objects and displaying menu if needed.
+**_Game_** class is the main game controller. Responsible for adding mobs, triggering tileMap class. map managament, updating objects and displaying menu if needed.
 Takes care of camera movements (cameraMovement()).
 
 Every object belonging to **_entity_** class is kept in std::vector<Entity> mobs, loaded from assets/mobs.txt file.<br>
