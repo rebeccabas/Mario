@@ -9,7 +9,7 @@ GameInfo::GameInfo()
 {
 	try
 	{
-		if (!font.loadFromFile("assets/PixeloidSans.ttf"))
+		if (!font.loadFromFile("assets/font/PixeloidSans.ttf"))
 		{
 			throw - 1;
 		}

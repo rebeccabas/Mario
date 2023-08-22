@@ -9,9 +9,9 @@
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 512
 
-#define JUMP_SOUND "assets/JUMP.wav"
-#define DIE_SOUND "assets/die.wav"
-#define HIT_SOUND "assets/hit.wav"
+#define JUMP_SOUND "assets/sound/jump.wav"
+#define DIE_SOUND "assets/sound/die.wav"
+#define HIT_SOUND "assets/sound/hit.wav"
 
 using namespace sf;
 

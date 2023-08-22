@@ -9,7 +9,7 @@ int main()
     sf::SoundBuffer buffer;
     sf::Sound bgsound;
 
-    if (!buffer.loadFromFile("assets/bgm.wav")) {
+    if (!buffer.loadFromFile("assets/sound/bgm.wav")) {
         // error handling
         std::cout << "Can't find sound file" << std::endl;
     }

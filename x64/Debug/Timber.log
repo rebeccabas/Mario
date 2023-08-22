@@ -1,18 +1,39 @@
-﻿  Mario.cpp
-E:\MarioClone\MarioClone\Mario.cpp(68,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+﻿  Game.cpp
+E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+E:\MarioClone\MarioClone\Game.cpp(124,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Game.cpp(232,39): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Mario.cpp(90,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(233,38): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Mario.cpp(111,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(234,41): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-E:\MarioClone\MarioClone\Mario.cpp(247,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(331,25): warning C4244: 'argument': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Game.cpp(406,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\MarioClone\MarioClone\Game.cpp(407,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+  Generating Code...
   Timber.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

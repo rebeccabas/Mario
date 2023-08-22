@@ -10,7 +10,7 @@ Mario::Mario()
 
 	try
 	{
-		if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+		if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, 64, 64)))
 		{
 			throw - 1;
 		}
@@ -54,7 +54,7 @@ void Mario::update(int mapWidth)
 
 		try
 		{
-			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, 64, 64)))
 			{
 				throw - 1;
 			}
@@ -76,7 +76,7 @@ void Mario::update(int mapWidth)
 
 		try
 		{
-			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, 64, 64)))
 			{
 				throw - 1;
 			}
@@ -130,7 +130,7 @@ void drawDeathScreen(int center, sf::RenderWindow& window)
 {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/deathscreen.png"))
+		if (!texture.loadFromFile("assets/image/deathscreen.png"))
 		{
 			throw - 1;
 		}
@@ -176,7 +176,7 @@ void Mario::setBigMario(bool isBig)
 
 		try
 		{
-			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, 64, 64)))
 			{
 				throw - 1;
 			}
@@ -197,7 +197,7 @@ void Mario::setBigMario(bool isBig)
 
 		try
 		{
-			if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, 64, 64)))
+			if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, 64, 64)))
 			{
 				throw - 1;
 			}

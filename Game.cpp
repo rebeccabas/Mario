@@ -6,7 +6,7 @@ Game::Game()
 	// window initialization
 	this->window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Mario");
 
-	map.load("assets/map.png", sf::Vector2u(64, 64));
+	map.load("assets/image/map.png", sf::Vector2u(64, 64));
 
 	view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 
@@ -94,11 +94,6 @@ void Game::updateSFMLEvents()
 			{
 				menu.setIsON(true);
 			}
-			// screen shots
-			if (sfEvent.key.code == Keyboard::F1)
-			{
-				screenshot.create(window);
-			}
 		}
 	}
 
@@ -112,7 +107,7 @@ void Game::update()
 	{
 		sf::Texture backgroundTexture;
 		try {
-			if (!backgroundTexture.loadFromFile("assets/deathscreen.png"))
+			if (!backgroundTexture.loadFromFile("assets/image/deathscreen.png"))
 			{
 				throw - 1;
 			}
@@ -313,8 +308,8 @@ void Game::Menu(int center)
 
 					view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 					gameInfo.reset();
-					map.loadArrayFromArray("assets/array.txt");
-					map.load("assets/map.png", sf::Vector2u(64, 64));
+					map.loadArrayFromArray("assets/txt/array.txt");
+					map.load("assets/image/map.png", sf::Vector2u(64, 64));
 					menu.setIsON(false);
 				}
 				if (menu.GetPressedItem() == 3)
@@ -399,7 +394,7 @@ void Game::addMobs()
 
 	mobs.clear();
 
-	infile.open("assets/mobs.txt");
+	infile.open("assets/txt/mobs.txt");
 	if (!infile) {
 		std::cout << "can not open file to read results from";
 	}

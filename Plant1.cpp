@@ -8,7 +8,7 @@ Plant1::Plant1()
 
 	try
 	{
-		if (!texture.loadFromFile("assets/" + file))/*, sf::IntRect(0, 0, Height, Width)))*/
+		if (!texture.loadFromFile("assets/image/" + file))/*, sf::IntRect(0, 0, Height, Width)))*/
 		{
 			throw - 1;
 		}

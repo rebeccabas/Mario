@@ -4,7 +4,7 @@
 Menu::Menu()
 {
 	try {
-		if (!font.loadFromFile("assets/PixeloidSans.ttf"))
+		if (!font.loadFromFile("assets/font/PixeloidSans.ttf"))
 		{
 			throw - 1;
 		}
@@ -64,7 +64,7 @@ void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
 	sf::Texture backgroundTexture;
 	try {
-		if (!backgroundTexture.loadFromFile("assets/titlescreen-2.png"))
+		if (!backgroundTexture.loadFromFile("assets/image/titlescreen-2.png"))
 		{
 			throw - 1;
 		}
@@ -88,7 +88,7 @@ void Menu::draw(sf::RenderWindow& window, int center)
 
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/menuBack-2.png"))
+		if (!texture.loadFromFile("assets/image/menuBack-2.png"))
 		{
 			throw - 1;
 		}
@@ -130,7 +130,7 @@ void Menu::drawResults(sf::RenderWindow& window, int center)
 void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/help-01.png"))
+		if (!texture.loadFromFile("assets/image/help-01.png"))
 		{
 			throw - 1;
 		}
@@ -154,7 +154,7 @@ void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
 void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/bestResultsWindow.png"))
+		if (!texture.loadFromFile("assets/image/bestResultsWindow.png"))
 		{
 			throw - 1;
 		}
@@ -306,7 +306,7 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/gameWon.png"))
+		if (!texture.loadFromFile("assets/image/gameWon.png"))
 		{
 			throw - 1;
 		}

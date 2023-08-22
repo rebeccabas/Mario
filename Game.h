@@ -5,7 +5,6 @@
 #include"Turtle.h"
 #include"GameInfo.h"
 #include "Menu.h"
-#include"Screenshot.h"
 #include"Bonus.h"
 #include"Spikey.h"
 #include"flyTur.h"
@@ -26,8 +25,8 @@
 #define LEFT 2
 #define RIGHT 3
 #define END_GAME 9
-#define MUSHROOM_SOUND "assets/mushroom.wav"
-#define STOMP_SOUND "assets/stomp.wav"
+#define MUSHROOM_SOUND "assets/sound/mushroom.wav"
+#define STOMP_SOUND "assets/sound/stomp.wav"
 
 class Game
 {
@@ -36,7 +35,6 @@ class Game
 	TileMap map;
 	GameInfo gameInfo;
 	Menu menu;
-	Screenshot screenshot;
 
 	
 	sf::Event sfEvent;
