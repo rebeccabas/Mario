@@ -3,10 +3,9 @@ Mario created with Object-Oriented Programming in C++ using SFML.
 Coded by Nijiya, Rubika and Sadhana for OOP Project BCT(II/I).
 
 ## Description:
-Join Mario on another epic adventure.
-Run, jump and race against time to reach the finish point. Battle foes and collect coins and bonuses along the way. 
+This project is a recreation of the classic platformer game Mario. It aims to capture the essence of the beloved Mario game, offering players an opportunity to relive the excitement of running, jumping, and navigating through a unique level while facing challenges and enemies.
 
-Mario is controlled using keyboard arrows. 
+Game is controlled using Keyboard Arrows. (Up, Down, Left, Right)
 
 <p align="center">
   <img width="80%" src="images/gameplay/gameplay.png">
