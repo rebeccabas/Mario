@@ -25,4 +25,62 @@ E:\MarioClone\MarioClone\Game.cpp(272,25): warning C4244: 'argument': conversion
           ]
 E:\MarioClone\MarioClone\Game.cpp(346,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 E:\MarioClone\MarioClone\Game.cpp(347,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Menu.cpp
+E:\MarioClone\MarioClone\Menu.cpp(50,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(51,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(52,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(53,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(54,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(56,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(57,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(58,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(84,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(150,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+E:\MarioClone\MarioClone\Menu.cpp(286,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\MarioClone\MarioClone\Menu.cpp(326,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  Generating Code...
   Mario.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

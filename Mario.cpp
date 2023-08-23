@@ -265,9 +265,8 @@ void Mario::dead() {
 				if(Keyboard::isKeyPressed(Keyboard::Enter))
 				{
 					HWND hwnd = GetConsoleWindow();
-
-					
 					SetForegroundWindow(hwnd);
+					SetActiveWindow(hwnd);
 					
 					gameInfo.saveResultToFile();
 					window.close();
