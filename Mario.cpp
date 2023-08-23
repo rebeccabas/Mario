@@ -2,6 +2,9 @@
 #include "GameInfo.h"
 #include <stdlib.h>
 #include <math.h>
+#define _WIN32_WINNT 0x0500
+
+#include <windows.h>
 
 Mario::Mario()
 {
@@ -231,9 +234,55 @@ void Mario::dead() {
 			GameInfo gameInfo;
 
 			dieSound.play();
-			isAlive = false;
 
-			gameInfo.saveResultToFile();
+			sf::RenderWindow window(sf::VideoMode(1024, 512), "GAME OVER");
+
+			// run the program as long as the window is open
+			while (window.isOpen())
+			{
+
+				sf::Texture backgroundTexture;
+				try {
+					if (!backgroundTexture.loadFromFile("assets/image/deathscreen.png"))
+					{
+						throw - 1;
+					}
+				}
+				catch (int)
+				{
+					std::cout << "Error: Cannot load death background texture.";
+					exit(1);
+				}
+				//display background
+				sf::Sprite spriteBackground;
+				spriteBackground.setTexture(backgroundTexture);
+				spriteBackground.setPosition(0, 0);
+				window.draw(spriteBackground);
+				window.display();
+				// check all the window's events that were triggered since the last iteration of the loop
+				sf::Event event;
+
+				if(Keyboard::isKeyPressed(Keyboard::Enter))
+				{
+					HWND hwnd = GetConsoleWindow();
+
+					
+					SetForegroundWindow(hwnd);
+					
+					gameInfo.saveResultToFile();
+					window.close();
+				}
+				while (window.pollEvent(event))
+				{
+					// "close requested" event: we close the window
+					if (event.type == sf::Event::Closed)
+						window.close();
+				}
+
+				
+			}
+
+			isAlive = false;
 
 			lives = 3;
 			
