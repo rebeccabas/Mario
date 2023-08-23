@@ -4,6 +4,7 @@
 Game::Game()
 {
 	// window initialization
+	
 	this->window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Mario");
 
 	map.load("assets/image/map.png", sf::Vector2u(64, 64)); //contains objects for map
