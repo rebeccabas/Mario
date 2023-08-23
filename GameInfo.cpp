@@ -174,6 +174,7 @@ void GameInfo::countTime()
 void GameInfo::saveResultToFile()
 {
     typeUserName();
+	std::cout << "Player: " << userName << std::endl;
     score = score - (time * 5);
     if (score < 0)
         score = 0;

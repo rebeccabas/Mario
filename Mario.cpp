@@ -31,7 +31,7 @@ Mario::Mario()
 	sprite.setPosition(startingPosition);
 	Width = 32;
 	Height = 60;
-	Velocity = 0.5;
+	Velocity = 0.52;
 	sprite.setOrigin(Width / 2.f, (Height / 2.f)+4);
 
 	jumpBuffer.loadFromFile(JUMP_SOUND);
@@ -44,7 +44,7 @@ Mario::Mario()
 	hitSound.setBuffer(hitBuffer);
 }
 
-void Mario::update(int mapWidth)
+void Mario::update(int mapWidth) //updates mario movement
 {
 	this->sprite.move(this->velocity);
 
@@ -68,7 +68,7 @@ void Mario::update(int mapWidth)
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = -Velocity + 0.2; // Adjusted leftward velocity while jumping
+		velocity.x = -Velocity + 0.22; // Adjusted leftward velocity while jumping
 	}
 	else if (Keyboard::isKeyPressed(Keyboard::Key::Right) && this->right() < mapWidth)
 	{
@@ -90,7 +90,7 @@ void Mario::update(int mapWidth)
 			exit(1);
 		}
 		sprite.setTexture(texture);
-		velocity.x = Velocity - 0.2; // Adjusted rightward velocity while jumping
+		velocity.x = Velocity - 0.22; // Adjusted rightward velocity while jumping
 	}
 	else
 		velocity.x = 0.0f;
@@ -126,29 +126,6 @@ void Mario::update(int mapWidth)
 		//goToStart();
 
 	}
-}
-
-
-void drawDeathScreen(int center, sf::RenderWindow& window)
-{
-	sf::Texture texture;
-	try {
-		if (!texture.loadFromFile("assets/image/deathscreen.png"))
-		{
-			throw - 1;
-		}
-	}
-	catch (int)
-	{
-		std::cout << "can not load death background texture";
-		exit(1);
-	}
-	//display background
-	sf::Sprite sprite;
-	sprite.setTexture(texture);
-	sprite.setOrigin({ 0,0 });
-	sprite.setPosition(0,0);
-	window.draw(sprite);
 }
 
 void Mario::goToStart()

@@ -42,11 +42,10 @@ public:
 	Menu();
 	~Menu();
 
-	//Sprite loadResources(sf::RenderWindow& window, Sprite spriteBackground);
-	void followMario(int center);
+	void followMario(int center); //draw menu at mario's position
 	void draw(sf::RenderWindow& window, int center);
 	void drawMenuBackground(sf::RenderWindow& window, int center);
-	void drawBestResults(sf::RenderWindow& window, int center);
+	void drawBestResults(sf::RenderWindow& window, int center); //draws scoreboard
 	void drawResults(sf::RenderWindow& window, int center);
 	void drawBestResultsBackground(sf::RenderWindow& window, int center);
 	void drawHelpMenu(sf::RenderWindow& window, int center);

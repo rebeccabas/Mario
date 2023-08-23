@@ -112,3 +112,30 @@ Coins: 055 Score: 0800 Time: 094 niji
 Wed Aug 23 17:02:27 2023
 Coins: 040 Score: 0500 Time: 032 niji
 
+Wed Aug 23 22:37:28 2023
+Coins: 009 Score: 0140 Time: 009 niji
+
+Wed Aug 23 22:41:29 2023
+Coins: 009 Score: 0190 Time: 016 aaaaaaaaaa
+
+Wed Aug 23 22:43:00 2023
+Coins: 059 Score: 0840 Time: 087 ssss
+
+Wed Aug 23 22:44:12 2023
+Coins: 006 Score: 0110 Time: 010 aaaa
+
+Wed Aug 23 23:00:13 2023
+Coins: 065 Score: 0950 Time: 140 niji
+
+Wed Aug 23 23:00:23 2023
+Coins: 003 Score: 0030 Time: 005 nnnnnnn
+
+Wed Aug 23 23:38:51 2023
+Coins: 078 Score: 1030 Time: 050 nnnn
+
+Wed Aug 23 23:57:46 2023
+Coins: 002 Score: 0020 Time: 005 niji
+
+Wed Aug 23 23:58:18 2023
+Coins: 003 Score: 0030 Time: 005 aaaa
+

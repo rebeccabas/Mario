@@ -52,19 +52,18 @@ public:
 	sf::RenderWindow* window;
 	sf::View view;
 	friend class Mario;
-	// constructors/destructors
-	Game();
+	
+	Game(); 
 	virtual ~Game();
 
-	// functions
-	void intersection(Mario& mario, Entity& entity);
-	void updateSFMLEvents();
-	void update();
-	void render();
-	void run();
-	void Menu(int center);
-	void cameraMovement();
-	void repairSFMLTextures();
+	void intersection(Mario& mario, Entity& entity);  //handle collision of mario and mobs
+	void updateSFMLEvents(); //handles pause and exit
+	void update(); //combines function to update gameplay
+	void render(); //draws maps, mobs and handles view
+	void Menu(int center); //handles controls in menu
+	void run(); //starts game
+	void cameraMovement(); //sets view on mario
+	void repairSFMLTextures(); 
 	void drawMobs();
 	void Bonuses();
 	void addMobs();

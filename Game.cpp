@@ -162,7 +162,7 @@ void Game::update()
 	Bonuses();	//update bonuses
 }
 
-void Game::render()
+void Game::render() //draws maps, mobs and handles view
 {
 	this->window->clear();
 
@@ -296,7 +296,7 @@ void Game::repairSFMLTextures()
 	}
 }
 
-void Game::drawMobs()
+void Game::drawMobs() //draws enemies
 {
 	for (int i = 0; i < mobs.size(); i++)
 	{
@@ -319,7 +319,7 @@ void Game::Bonuses()
 
 void Game::addMobs()
 {
-	// Mobs are read from file and add to the vector
+	// Co-ordinates for mobs are read from file "mobs.txt" 
 	// file structure
 	// mobName Posiion.x,Position.y
 	// example

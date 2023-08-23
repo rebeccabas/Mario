@@ -15,6 +15,8 @@ Menu::Menu()
 		exit(1);
 	}
 
+	//adding menu items
+
 	menu[0].setFont(font);
 	sf::Color color(255, 87, 51);
 	menu[0].setFillColor(color);
@@ -40,12 +42,10 @@ Menu::Menu()
 	menu[4].setFillColor(sf::Color::White);
 	menu[4].setString("EXIT");
 
-	
-
 	selectedItemIndex = 0;
 }
 
-void Menu::followMario(int center)
+void Menu::followMario(int center) //draw menu at mario's position
 {
 	menu[0].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.25 + 138));
 	menu[1].setPosition(sf::Vector2f(center - 55, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.6 + 138));
@@ -78,7 +78,8 @@ void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 		std::cout << "Error: Cannot load menu background texture.";
 		exit(1);
 	}
-	//display background
+
+	//display menu background
 	sf::Sprite spriteBackground;
 	spriteBackground.setTexture(backgroundTexture);
 	spriteBackground.setPosition(window.getSize().x /2 - WINDOW_WIDTH / 2, 0);
@@ -86,9 +87,10 @@ void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 	window.setView(window.getDefaultView());
 	window.draw(spriteBackground);
 }
-void Menu::draw(sf::RenderWindow& window, int center)
+
+void Menu::draw(sf::RenderWindow& window, int center) //draw menu screen
 {	
-	drawMenuBackground(window, center);
+	drawMenuBackground(window, center); //menu background
 
 	sf::Texture texture;
 	try {
@@ -102,7 +104,8 @@ void Menu::draw(sf::RenderWindow& window, int center)
 		std::cout << "Error: Cannot load menu background texture.";
 		exit(1);
 	}
-	//display background
+
+	//display menu box background
 	sf::Sprite sprite;
 	sprite.setTexture(texture);
 	sprite.setOrigin({ 190,20 });
@@ -110,17 +113,18 @@ void Menu::draw(sf::RenderWindow& window, int center)
 	sf::View view(sf::FloatRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT));
 	window.setView(view);
 	window.draw(sprite);
-	//display option to choose
+
+	//display menu items
 	for (int i = 0; i < MAX_NUMBER_OF_ITEMS; i++)
 	{
 		window.draw(menu[i]);
 	}
 }
 
-void Menu::drawBestResults(sf::RenderWindow& window, int center)
+void Menu::drawBestResults(sf::RenderWindow& window, int center) //draws scoreboard
 {
-	drawBestResultsBackground(window, center);
-	drawResults(window, center);
+	drawBestResultsBackground(window, center); //background image for score
+	drawResults(window, center); //top 3 scores
 }
 
 void Menu::drawResults(sf::RenderWindow& window, int center)
@@ -131,7 +135,8 @@ void Menu::drawResults(sf::RenderWindow& window, int center)
 	}
 }
 
-void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
+void Menu::drawHelpMenu(sf::RenderWindow& window, int center) 
+{
 	sf::Texture texture;
 	try {
 		if (!texture.loadFromFile("assets/image/help-01.png"))
@@ -145,17 +150,18 @@ void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
 		exit(1);
 	}
 
-	sf::Sprite winBackground;
-	winBackground.setTexture(texture);
-	winBackground.setPosition(window.getSize().x / 2 - WINDOW_WIDTH / 2, 0);
+	sf::Sprite helpBackground;
+	helpBackground.setTexture(texture);
+	helpBackground.setPosition(window.getSize().x / 2 - WINDOW_WIDTH / 2, 0);
 
 	window.setView(window.getDefaultView());
-	window.draw(winBackground);
+	window.draw(helpBackground);
 
 }
 
 
-void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
+void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) //background for best results
+{
 	sf::Texture texture;
 	try {
 		if (!texture.loadFromFile("assets/image/bestResultsWindow.png"))
@@ -176,7 +182,7 @@ void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
 	window.draw(sprite);
 }
 
-void Menu::MoveUp()
+void Menu::MoveUp() //keyboard input UP in menu
 {
 	if (selectedItemIndex - 1 >= 0)
 	{
@@ -187,7 +193,7 @@ void Menu::MoveUp()
 	}
 }
 
-void Menu::MoveDown()
+void Menu::MoveDown() //keyboard input DOWN in menu
 {
 	if (selectedItemIndex + 1 < MAX_NUMBER_OF_ITEMS)
 	{
@@ -198,7 +204,7 @@ void Menu::MoveDown()
 	}
 }
 
-int Menu::GetPressedItem()
+int Menu::GetPressedItem() //what is pressed in menu
 {
 	return selectedItemIndex;
 }
@@ -219,7 +225,7 @@ void Menu::setIsON(bool status)
 	selectedItemIndex = 0;
 }
 
-void Menu::readResultsFromFile()
+void Menu::readResultsFromFile() //read scores
 {
 	std::string line, line2;
 	std::string coinsTemp;;
@@ -278,7 +284,7 @@ void Menu::readResultsFromFile()
 	sortResults();
 }
 
-void Menu::loadResultsToArray()
+void Menu::loadResultsToArray() //displays results
 {
 	readResultsFromFile();
 	int numberOFResults = NUMBER_OF_RESULTS;
@@ -306,7 +312,7 @@ void Menu::sortResults()
 
 }
 
-void Menu::gameWon(int center, sf::RenderWindow& window)
+void Menu::gameWon(int center, sf::RenderWindow& window) //GAME WON screen
 {
 	sf::Texture texture;
 	try {
@@ -328,7 +334,9 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 	window.setView(window.getDefaultView());
 	window.draw(winBackground);
 }
-void Menu::reset() {
+
+void Menu::reset() //for changing color when moving up and down in menu
+{
 	selectedItemIndex = 0;
 	sf::Color color(255, 87, 51);
 	menu[selectedItemIndex].setFillColor(color);
