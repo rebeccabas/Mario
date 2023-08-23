@@ -4,16 +4,18 @@
 Game::Game()
 {
 	// window initialization
+	
 	this->window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Mario");
 
-	map.load("assets/map.png", sf::Vector2u(64, 64));
+	map.load("assets/image/map.png", sf::Vector2u(64, 64)); //contains objects for map
 
 	view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 
-	gameInfo.reset();
+	gameInfo.reset(); //resets game stats
 
-	addMobs();
+	addMobs(); //adds enemies
 
+	//when mario eats mushroom
 	mushroomBuffer.loadFromFile(MUSHROOM_SOUND);
 	mushroomSound.setBuffer(mushroomBuffer);
 }
@@ -23,21 +25,21 @@ Game::~Game()
 	delete this->window;
 }
 
-void Game::intersection(Mario& mario, Entity& entity)
+void Game::intersection(Mario& mario, Entity& entity) //handle collision of mario and mobs
 {
 	Bonus b;
 	if (entity.getIsAlive()) {
 		if (mario.getSprite().getGlobalBounds().intersects(entity.getSprite().getGlobalBounds()))
-			if (entity.getIsFriendly())	// if entity is friendly mario collect it
+			if (entity.getIsFriendly())	//if entity is friendly mario collects it
 			{
 				entity.dead();
-				mario.setBigMario(true);
+				mario.setBigMario(true); 
 				mushroomSound.play();
 				gameInfo.increaseScoreBonus();
 			}
-			else
+			else //if entity is not friendly
 			{
-				if (abs(mario.bottom() - entity.top()) < 10 && abs(mario.left() - entity.left()) < 54 && entity.isKillable())	// mario jumped on the entity
+				if (abs(mario.bottom() - entity.top()) < 10 && abs(mario.left() - entity.left()) < 54 && entity.isKillable())	//mario jumped on the entity, entity dies
 				{
 					if (mario.getIsAlive())
 					{
@@ -49,11 +51,11 @@ void Game::intersection(Mario& mario, Entity& entity)
 						gameInfo.increaseScoreBonus();
 					}
 				}
-				else // mario was hit by the entity 
+				else //mario was hit by the entity, mario dies
 				{
 					if (entity.getIsAlive())
 					{
-						menu.setIsON(true);
+						menu.setIsON(true); //if all lives lost, shows menu
 						mario.killingMove();
 						mario.killingMove();
 						mario.dead();
@@ -66,15 +68,10 @@ void Game::intersection(Mario& mario, Entity& entity)
 						{
 							gameInfo.showLife1();
 						}
-						/*else if (mario.lives == 0)
-						{
-							mario.dieSound.play();
-							gameInfo.reset();
-						}*/
-
+						
 						if (mario.getIsAlive()) {
-							menu.setIsON(false);
-							view.setCenter(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+							menu.setIsON(false); //if mario still has lives, doesn't show menu
+							view.setCenter(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2); //center view on mario
 						}
 					}
 				}
@@ -82,40 +79,36 @@ void Game::intersection(Mario& mario, Entity& entity)
 	}
 }
 
-void Game::updateSFMLEvents()
+void Game::updateSFMLEvents() //handles pause and exit
 {
 	while (this->window->pollEvent(this->sfEvent))
 	{
-		if (this->sfEvent.type == sf::Event::Closed)
+		if (this->sfEvent.type == sf::Event::Closed) //when player closes window
 			this->window->close();
-		if (this->sfEvent.type == sf::Event::KeyReleased)
+		if (this->sfEvent.type == sf::Event::KeyReleased) //when player presses esc, game pauses
 		{
 			if (sfEvent.key.code == Keyboard::Escape)
 			{
 				menu.setIsON(true);
 			}
-			// screen shots
-			if (sfEvent.key.code == Keyboard::F1)
-			{
-				screenshot.create(window);
-			}
 		}
 	}
+
 }
 
 void Game::update()
 {
-	this->updateSFMLEvents();
+	this->updateSFMLEvents(); //handles pause and exit
 
 	for (int i = 0; i < mobs.size(); i++)
 	{
-		if (abs((mario.getPosition().x - mobs.at(i).getPosition().x)) < WINDOW_WIDTH / 1.6) // OPTIMALIZATION (only mobs in WINDOW_WIDTH / 1.6 distance are moved)
+		if (abs((mario.getPosition().x - mobs.at(i).getPosition().x)) < WINDOW_WIDTH / 1.6) //for optimization, mobs are created only when mario is near
 		{
-			intersection(mario, mobs.at(i));
+			intersection(mario, mobs.at(i)); //checks if mario has touched mob
 
-			if (mobs.at(i).getIsAlive())
+			if (mobs.at(i).getIsAlive()) //handles movement of mobs; if mob hits brick direction reversed
 			{
-				int movingSide = map.collision(mobs.at(i), gameInfo);
+				int movingSide = map.collision(mobs.at(i), gameInfo); 
 
 				if (movingSide == LEFT)
 					mobs.at(i).MovingDirectiongLeft();
@@ -126,22 +119,12 @@ void Game::update()
 			}
 		}
 
-		if (mario.bottom() > WINDOW_HEIGHT)//mario falling off
-		{
+		
+	}
 
-			//twice, Mario can be in 2 lives mode, but this should kill him anyway
-			//this->dead();
-			//this->dead();
-			//this->dead();
-			mario.lives = 0;
-			mario.dieSound.play();
-
-		}
-	}//
-
-	int marioHit = map.collision(mario, gameInfo);
+	int marioHit = map.collision(mario, gameInfo); //checks what mario is touching
 	map.collision(mario, gameInfo);
-	if (marioHit == BOTTOM)	// if mario on the ground he can jump
+	if (marioHit == BOTTOM)	//if mario is on the ground he can jump
 	{
 		mario.setCanJump(true);
 	}
@@ -153,8 +136,10 @@ void Game::update()
 	if (!mario.getIsAlive())
 		menu.setIsON(true);
 
-	if (marioHit == END_GAME && !won)
+	if (marioHit == END_GAME && !won) //if mario reaches end game point
 	{	
+		//resets mario's lives, opens window to input name to save score
+		//also prompts "You Win" screen
 		sf::Time delayTime = sf::milliseconds(200);
 		mario.isAlive = false;
 		window->clear();
@@ -165,32 +150,7 @@ void Game::update()
 		gameInfo.saveResultToFile();
 		window->setVisible(true);
 		sf::sleep(delayTime);
-		/*
-		window->setVisible(false);
-		menu.isON();
-		gameInfo.saveResultToFile();
-		window->setVisible(true);
-		mario.dead();	// die twice, cause mario may have additional life
-		mario.dead();
-		won = true;*/
-
-		//window->setVisible(false);
-		//menu.draw(*window, 0);
-		//gameInfo.saveResultToFile();
-		//menu.isON();
-
-
-	/*
-		mario.isAlive = false;
-		window->clear();
-		mario.lives = 0;
-		mario.goToStart();
-	*/
-
-
-		//window->setVisible(true);
-		//mario.dead();	// die twice, cause mario may have additional life
-		//mario.dead();
+	
 		won = true;
 
 	}
@@ -199,7 +159,7 @@ void Game::update()
 
 	mario.update(map.getMapWidth());
 
-	Bonuses();	// update bonuses
+	Bonuses();	//update bonuses
 }
 
 void Game::render()
@@ -208,7 +168,7 @@ void Game::render()
 
 	window->draw(map);
 
-	// follow mario to display in right place when called
+	//always prints game stats in center
 	gameInfo.followMario(view.getCenter().x);
 	menu.followMario(mario.getPosition().x);
 	gameInfo.draw(*window, view.getCenter().x);
@@ -224,27 +184,33 @@ void Game::render()
 	this->window->display();
 }
 
-void Game::Menu(int center)
+void Game::Menu(int center) //handles controls in menu
 {
 	if (center != WINDOW_WIDTH / 2)
 		center = WINDOW_WIDTH / 2;
 
-	menu.followMario(center);
-	menu.drawMenuBackground(*window, center);
-	menu.draw(*window, center);
+	menu.followMario(center); //always draws menu in the center
+	menu.draw(*window, center); //draws menu
 
-	if (won)
+	if (won) //if game won
 	{
 		mario.lives = 3;
 		menu.gameWon(center, *window);
 		menu.isON();
 	}
 
-	if (menu.GetPressedItem() == 2)
+	if (menu.GetPressedItem() == 2) 
 	{
 		menu.drawBestResults(*window, center);
 	}
+
+	if (menu.GetPressedItem() == 3)
+	{
+		menu.drawHelpMenu(*window, center);
+	}
+
 	this->window->display();
+
 	while (window->pollEvent(sfEvent))
 	{
 		if (sfEvent.type == Event::Closed)
@@ -283,8 +249,8 @@ void Game::Menu(int center)
 
 					view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 					gameInfo.reset();
-					map.loadArrayFromArray("assets/array.txt");
-					map.load("assets/map.png", sf::Vector2u(64, 64));
+					map.loadArrayFromArray("assets/txt/array.txt");
+					map.load("assets/image/map.png", sf::Vector2u(64, 64));
 					menu.setIsON(false);
 				}
 				if (menu.GetPressedItem() == 3)
@@ -298,7 +264,7 @@ void Game::Menu(int center)
 	}
 }
 
-void Game::run()
+void Game::run() //starts game
 {
 	while (this->window->isOpen())
 	{
@@ -312,9 +278,8 @@ void Game::run()
 	}
 }
 
-void Game::cameraMovement()
+void Game::cameraMovement() //sets view on mario
 {
-	//sf::View view = window.getDefaultView();
 	if (mario.getPosition().x != WINDOW_WIDTH / 2)
 		view.setCenter({ mario.getPosition().x, WINDOW_HEIGHT / 2 });
 }
@@ -369,7 +334,7 @@ void Game::addMobs()
 
 	mobs.clear();
 
-	infile.open("assets/mobs.txt");
+	infile.open("assets/txt/mobs.txt");
 	if (!infile) {
 		std::cout << "can not open file to read results from";
 	}
@@ -397,7 +362,7 @@ void Game::addMobs()
 				wsk = new Plant2;
 
 			else
-				wsk = new Fireee; // if no mobName read from exist take Fireee
+				wsk = new Abysss; // if no mobName read from exist take Abysss
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);
