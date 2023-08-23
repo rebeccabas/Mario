@@ -9,9 +9,9 @@
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 512
 
-#define JUMP_SOUND "assets/JUMP.wav"
-#define DIE_SOUND "assets/die.wav"
-#define HIT_SOUND "assets/hit.wav"
+#define JUMP_SOUND "assets/sound/jump.wav"
+#define DIE_SOUND "assets/sound/die.wav"
+#define HIT_SOUND "assets/sound/hit.wav"
 
 using namespace sf;
 
@@ -20,7 +20,7 @@ class Mario : public Entity
 private:
 	int lives = 3;
 	bool canJump = 0;
-	float jumpHeight = 1000;
+	float jumpHeight = 900;
 	float jumpCurrentPosition = 0;
 	std::chrono::steady_clock::time_point startTime;
 	std::chrono::steady_clock::time_point finishTime;
@@ -36,6 +36,7 @@ private:
 
 	SoundBuffer jumpBuffer, dieBuffer, hitBuffer;
 	Sound jumpSound, dieSound, hitSound;
+	
 
 	bool keyRel = false;
 

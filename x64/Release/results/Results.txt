@@ -1,0 +1,30 @@
+Wed Aug  3 00:00:36 2023
+Coins: 048 Score: 0345 Time: 037 Rubika
+
+Wed Aug  5 00:01:50 2023
+Coins: 064 Score: 0665 Time: 045 Nijiya
+
+Wed Aug  3 00:01:50 2023
+Coins: 020 Score: 0120 Time: 045 Rubika
+
+Sat Aug  8 22:41:41 2023
+Coins: 051 Score: 0555 Time: 041 Rubika
+
+Sat Aug 8 22:43:18 2023
+Coins: 047 Score: 0505 Time: 033 Sadhana
+
+Sat Aug  8 22:45:24 2023
+Coins: 046 Score: 0325 Time: 037 Rubika
+
+Sat Aug  8 22:47:00 2023
+Coins: 045 Score: 0350 Time: 040 Sadhana
+
+Sat Aug  8 22:48:48 2023
+Coins: 048 Score: 0345 Time: 037 Nijiya
+
+Sat Aug  8 22:52:31 2023
+Coins: 042 Score: 0295 Time: 035 Nijiya
+
+Sat Aug  8 23:05:16 2023
+Coins: 045 Score: 0395 Time: 031 Sadhana
+
