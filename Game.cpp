@@ -253,7 +253,7 @@ void Game::Menu(int center) //handles controls in menu
 					map.load("assets/image/map.png", sf::Vector2u(64, 64));
 					menu.setIsON(false);
 				}
-				if (menu.GetPressedItem() == 3)
+				if (menu.GetPressedItem() == 4)
 				{
 					window->close();
 					delete this->window;

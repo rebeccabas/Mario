@@ -79,3 +79,12 @@ Coins: 003 Score: 0030 Time: 005 nnnnd
 Wed Aug 23 14:28:16 2023
 Coins: 003 Score: 0030 Time: 005 nnnn
 
+Wed Aug 23 14:30:24 2023
+Coins: 003 Score: 0030 Time: 005 nijiya
+
+Wed Aug 23 14:34:56 2023
+Coins: 006 Score: 0160 Time: 011 nijiya
+
+Wed Aug 23 14:37:32 2023
+Coins: 003 Score: 0030 Time: 020 nijiya
+

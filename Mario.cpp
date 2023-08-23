@@ -266,7 +266,6 @@ void Mario::dead() {
 				{
 					HWND hwnd = GetConsoleWindow();
 					SetForegroundWindow(hwnd);
-					SetActiveWindow(hwnd);
 					
 					gameInfo.saveResultToFile();
 					window.close();
