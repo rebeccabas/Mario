@@ -63,7 +63,7 @@ void Entity::reset()
 }
 
 void Entity::repair() {
-	if (!texture.loadFromFile("assets/image/" + file, sf::IntRect(0, 0, Height, Width)))
+	if (!texture.loadFromFile("assets/" + file, sf::IntRect(0, 0, Height, Width)))
 	{
 		std::cout << "Error: Texture did not load." << std::endl;
 	}

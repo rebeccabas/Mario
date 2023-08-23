@@ -16,4 +16,5 @@ public:
 	Bonus() {};
 	Bonus(sf::Vector2f startingPosition);
 	~Bonus();
+
 };
