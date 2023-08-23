@@ -1,10 +1,10 @@
 #include "Menu.h"
-
+#include "Windows.h"
 
 Menu::Menu()
 {
 	try {
-		if (!font.loadFromFile("assets/PixeloidSans.ttf"))
+		if (!font.loadFromFile("assets/font/PixeloidSans.ttf"))
 		{
 			throw - 1;
 		}
@@ -32,20 +32,26 @@ Menu::Menu()
 	readResultsFromFile();
 	loadResultsToArray();
 
-
 	menu[3].setFont(font);
 	menu[3].setFillColor(sf::Color::White);
-	menu[3].setString("EXIT");
+	menu[3].setString("HELP");
+
+	menu[4].setFont(font);
+	menu[4].setFillColor(sf::Color::White);
+	menu[4].setString("EXIT");
+
+	
 
 	selectedItemIndex = 0;
 }
 
 void Menu::followMario(int center)
 {
-	menu[0].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.25 + 130));
-	menu[1].setPosition(sf::Vector2f(center - 55, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.6 + 130));
-	menu[2].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2 + 130));
-	menu[3].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.4 + 130));
+	menu[0].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.25 + 138));
+	menu[1].setPosition(sf::Vector2f(center - 55, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 1.6 + 138));
+	menu[2].setPosition(sf::Vector2f(center - 95, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2 + 138));
+	menu[3].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.4 + 138));
+	menu[4].setPosition(sf::Vector2f(center - 30, WINDOW_HEIGHT / (MAX_NUMBER_OF_ITEMS + 1) * 2.8 + 138));
 
 	resultsToDisplay[0].setPosition(sf::Vector2f(center - 343, 45));
 	resultsToDisplay[1].setPosition(sf::Vector2f(center - 342, 70));
@@ -56,9 +62,13 @@ void Menu::followMario(int center)
 
 void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
+	HWND hwnd = window.getSystemHandle();
+
+	SetForegroundWindow(hwnd);
+
 	sf::Texture backgroundTexture;
 	try {
-		if (!backgroundTexture.loadFromFile("assets/titlescreen-2.png"))
+		if (!backgroundTexture.loadFromFile("assets/image/titlescreen-2.png"))
 		{
 			throw - 1;
 		}
@@ -82,7 +92,7 @@ void Menu::draw(sf::RenderWindow& window, int center)
 
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/menuBack-2.png"))
+		if (!texture.loadFromFile("assets/image/menuBack-2.png"))
 		{
 			throw - 1;
 		}
@@ -121,10 +131,34 @@ void Menu::drawResults(sf::RenderWindow& window, int center)
 	}
 }
 
+void Menu::drawHelpMenu(sf::RenderWindow& window, int center) {
+	sf::Texture texture;
+	try {
+		if (!texture.loadFromFile("assets/image/help-01.png"))
+		{
+			throw - 1;
+		}
+	}
+	catch (int)
+	{
+		std::cout << "can not load winning background texture";
+		exit(1);
+	}
+
+	sf::Sprite winBackground;
+	winBackground.setTexture(texture);
+	winBackground.setPosition(window.getSize().x / 2 - WINDOW_WIDTH / 2, 0);
+
+	window.setView(window.getDefaultView());
+	window.draw(winBackground);
+
+}
+
+
 void Menu::drawBestResultsBackground(sf::RenderWindow& window, int center) {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/bestResultsWindow.png"))
+		if (!texture.loadFromFile("assets/image/bestResultsWindow.png"))
 		{
 			throw - 1;
 		}
@@ -253,11 +287,11 @@ void Menu::loadResultsToArray()
 
 	for (int i = 0; i < numberOFResults; i++)
 	{
-		std::string toDisplay = std::to_string(i + 1) + ". Score: " + loadedResults.at(i).score + " coins: " + loadedResults.at(i).coins + " time " + loadedResults.at(i).time + "   " + loadedResults.at(i).date + " " + loadedResults.at(i).userName;
+		std::string toDisplay = std::to_string(i + 1) + ". Score: " + loadedResults.at(i).score + "   coins: " + loadedResults.at(i).coins + " time " + loadedResults.at(i).time + "    " + loadedResults.at(i).userName;
 		resultsToDisplay[i].setString(toDisplay);
 
 		resultsToDisplay[i].setFont(font);
-		resultsToDisplay[i].setFillColor(sf::Color::Black);
+		resultsToDisplay[i].setFillColor(sf::Color::White);
 		resultsToDisplay[i].setCharacterSize(20);
 	}
 }
@@ -276,7 +310,7 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 {
 	sf::Texture texture;
 	try {
-		if (!texture.loadFromFile("assets/gameWon.png"))
+		if (!texture.loadFromFile("assets/image/gameWon.png"))
 		{
 			throw - 1;
 		}
@@ -286,14 +320,6 @@ void Menu::gameWon(int center, sf::RenderWindow& window)
 		std::cout << "can not load winning background texture";
 		exit(1);
 	}
-	//display background
-	/*sf::Sprite sprite;
-	sprite.setTexture(texture);
-	//sprite.setOrigin({ 190,101 });
-	sprite.setOrigin({ 0,0  });
-	sprite.setPosition({ (float)center, 450 });
-	window.draw(sprite);
-	*/
 
 	sf::Sprite winBackground;
 	winBackground.setTexture(texture);
