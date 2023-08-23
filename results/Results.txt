@@ -28,3 +28,36 @@ Coins: 042 Score: 0295 Time: 035 Nijiya
 Sat Jun  8 23:05:16 2019
 Coins: 045 Score: 0395 Time: 031 Kasia
 
+Wed Aug 23 14:30:24 2023
+Coins: 003 Score: 0030 Time: 005 nijiya
+
+Wed Aug 23 14:34:56 2023
+Coins: 006 Score: 0160 Time: 011 nijiya
+
+Wed Aug 23 14:37:32 2023
+Coins: 003 Score: 0030 Time: 020 nijiya
+
+Wed Aug 23 16:21:14 2023
+Coins: 006 Score: 0110 Time: 027 nijiya
+
+Wed Aug 23 16:27:42 2023
+Coins: 003 Score: 0030 Time: 006 nni
+
+Wed Aug 23 16:29:22 2023
+Coins: 004 Score: 0090 Time: 013 niji
+
+Wed Aug 23 16:29:46 2023
+Coins: 006 Score: 0110 Time: 018 niji
+
+Wed Aug 23 16:30:29 2023
+Coins: 006 Score: 0210 Time: 038 nji
+
+Wed Aug 23 16:52:13 2023
+Coins: 063 Score: 0780 Time: 060 niji
+
+Wed Aug 23 17:00:03 2023
+Coins: 055 Score: 0800 Time: 094 niji
+
+Wed Aug 23 17:02:27 2023
+Coins: 040 Score: 0500 Time: 032 niji
+
