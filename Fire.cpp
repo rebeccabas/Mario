@@ -1,10 +1,10 @@
-#include "Plant1.h"
+#include "Fire.h"
 
 
 
-Plant1::Plant1()
+Fireee::Fireee()
 {
-	file = "plant.png";
+	file = "fire-1.jpg";
 
 	try
 	{
@@ -15,15 +15,15 @@ Plant1::Plant1()
 	}
 	catch (int)
 	{
-		std::cout << "Error: Cannot load plant texture.";
+		std::cout << "Error: Cannot load fire texture.";
 		exit(1);
 	}
 
 	sprite.setTexture(texture);
 
 
-	Height = 64;
-	Width = 64;
+	Height = 60;
+	Width = 55;
 	Velocity = 0.0;
 	velocity = { Velocity ,0 };
 	sprite.setOrigin(Width / 2.f, Height / 2.f);
@@ -33,6 +33,6 @@ Plant1::Plant1()
 }
 
 
-Plant1::~Plant1()
+Fireee::~Fireee()
 {
 }
