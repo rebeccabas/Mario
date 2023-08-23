@@ -9,7 +9,7 @@ GameInfo::GameInfo()
 {
 	try
 	{
-		if (!font.loadFromFile("assets/font/PixeloidSans.ttf"))
+		if (!font.loadFromFile("assets/PixeloidSans.ttf"))
 		{
 			throw - 1;
 		}
@@ -98,17 +98,6 @@ int GameInfo::getLife()
 void GameInfo::increaseCoins()
 {
 	coins++;
-
-	std::ofstream outputFile("results/coins.txt"); // Open the file for writing
-
-	if (!outputFile.is_open()) {
-		std::cerr << "Failed to open the output file." << std::endl;
-	}
-
-	outputFile << coins; // Write the value of time to the output file
-	outputFile.close();  // Close the output file
-
-
 	increaseScoreCoins();
 	info[0].setString("COINS: " + std::to_string(coins));
 }
@@ -116,34 +105,12 @@ void GameInfo::increaseCoins()
 void GameInfo::increaseScoreBonus()
 {
 	score += 50;
-
-	std::ofstream outputFile("results/score.txt"); // Open the file for writing
-
-	if (!outputFile.is_open()) {
-		std::cerr << "Failed to open the output file." << std::endl;
-	}
-
-	outputFile << score; // Write the value of time to the output file
-	outputFile.close();  // Close the output file
-
-
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
 void GameInfo::increaseScoreCoins()
 {
 	score += 10;
-
-	std::ofstream outputFile("results/score.txt"); // Open the file for writing
-
-	if (!outputFile.is_open()) {
-		std::cerr << "Failed to open the output file." << std::endl;
-	}
-
-	outputFile << score; // Write the value of time to the output file
-	outputFile.close();  // Close the output file
-
-
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
@@ -154,17 +121,6 @@ void GameInfo::countTime()
 	if (switcher != difference)
 	{
 		time++;
-
-		std::ofstream outputFile("results/time.txt"); // Open the file for writing
-
-		if (!outputFile.is_open()) {
-			std::cerr << "Failed to open the output file." << std::endl;
-		}
-
-		outputFile << time; // Write the value of time to the output file
-		outputFile.close();  // Close the output file
-
-
 		start = std::chrono::high_resolution_clock::now();
 	}
 
@@ -173,64 +129,17 @@ void GameInfo::countTime()
 
 void GameInfo::saveResultToFile()
 {
-    typeUserName();
-    score = score - (time * 5);
-    if (score < 0)
-        score = 0;
-    std::time(&czas);
-    localData = ctime(&czas);
+	typeUserName();
+	score = score - (time * 5);
+	if (score < 0)
+		score = 0;
+	std::time(&czas);
+	localData = ctime(&czas);
 
-	int coinsf, timef, scoref;
-
-	std::ifstream coinsFile("results/coins.txt"); // Open the file for reading
-	if (!coinsFile.is_open()) {
-		std::cerr << "Failed to open coins.txt" << std::endl;
-	}
-	if (coinsFile >> coinsf) {
-		std::cout << "Read coins: " << coinsf << std::endl;
-	}
-	else {
-		std::cerr << "Failed to read the number from the file." << std::endl;
-	}
-	coinsFile.close(); // Close the file
-
-
-	std::ifstream timeFile("results/time.txt"); // Open the file for reading
-	if (!timeFile.is_open()) {
-		std::cerr << "Failed to open time.txt" << std::endl;
-	}
-	if (timeFile >> timef) {
-		std::cout << "Read time: " << timef << std::endl;
-	}
-	else {
-		std::cerr << "Failed to read the number from the file." << std::endl;
-	}
-	timeFile.close(); // Close the file
-
-
-	std::ifstream scoreFile("results/score.txt"); // Open the file for reading
-	if (!scoreFile.is_open()) {
-		std::cerr << "Failed to open score.txt" << std::endl;
-	}
-	if (scoreFile >> scoref) {
-		std::cout << "Read score: " << scoref << std::endl;
-	}
-	else {
-		std::cerr << "Failed to read the number from the file." << std::endl;
-	}
-	scoreFile.close(); // Close the file
-
-
-
-    std::ofstream myfile;
-    myfile.open("results/Results.txt", std::ios::app);
-    
-    if (myfile.is_open()) { // Check if the file was opened successfully
-        myfile << localData << "Coins: " << properFormat3(coinsf) << " Score: " << properFormat4(scoref) << " Time: " << properFormat3(timef) << " " << userName << std::endl << std::endl;
-        myfile.close();
-    } else {
-        std::cerr << "Error opening the file." << std::endl;
-    }
+	std::ofstream myfile;
+	myfile.open("../results/Results.txt", std::ios::app);
+	myfile << localData << "Coins: " << properFormat3(coins) << " Score: " << properFormat4(score) << " Time: " << properFormat3(time) << " " << userName << std::endl << std::endl;
+	myfile.close();
 }
 
 std::string GameInfo::properFormat3(int number) // return 3 numbers 3 -> 003, 49 -> 049, 234 -> 234

@@ -4,7 +4,7 @@
 TileMap::TileMap()
 {
 
-	loadArrayFromArray("assets/txt/array.txt");
+	loadArrayFromArray("assets/array.txt");
 
 	coinBuffer.loadFromFile(COIN_SOUND);
 	coinSound.setBuffer(coinBuffer);
@@ -93,14 +93,14 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 							case BOTTOM:
 								if (tiles[i * width + j] == 3) {	// BONUS
 									tiles[i * width + j] = 0;
-									load("assets/image/map.png", sf::Vector2u(64, 64));
+									load("assets/map.png", sf::Vector2u(64, 64));
 									bonus = true;
 								}
 
 								if (Entity.getDestroyMode()) //mario can get in destroy mode and destroy bricks
 								{
 									tiles[i * width + j] = 0;
-									load("assets/image/map.png", sf::Vector2u(64, 64));
+									load("assets/map.png", sf::Vector2u(64, 64));
 								}
 
 								Entity.moveBottom();
@@ -119,7 +119,7 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 						else if (tiles[i * width + j] == COIN)		// if COIN
 						{
 							tiles[i * width + j] = 0;	// change coin to heaven
-							load("assets/image/map.png", sf::Vector2u(64, 64));
+							load("assets/map.png", sf::Vector2u(64, 64));
 							coinSound.play();
 							gameInfo.increaseCoins();
 						}

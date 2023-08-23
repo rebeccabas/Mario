@@ -5,7 +5,7 @@
 #include<iostream>
 
 using namespace sf;
-class Entity : public Drawable // Drawable makes possible to use window.draw(object)
+class Entity : public Drawable // Drawable makes possible to use window.draw(Ball)
 {
 	public:
 	Texture texture;
@@ -17,7 +17,7 @@ class Entity : public Drawable // Drawable makes possible to use window.draw(obj
 	Vector2f startingPosition;
 	Vector2f velocity{ Velocity, Velocity };
 
-	void draw(RenderTarget& target, RenderStates state) const; // to use window.draw(object)
+	void draw(RenderTarget& target, RenderStates state) const; // to use window.draw(Ball)
 
 	bool destroyMode = 0;
 	bool isFriendly = 0;

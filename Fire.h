@@ -4,17 +4,17 @@
 #include<SFML/Graphics.hpp>
 #include<SFML/Window.hpp>
 #include<SFML/Audio.hpp>
-#include<iostream>
 #include"entity.h"
 
-using namespace sf;
-class Bonus : public Entity
+#define WINDOW_WIDTH 1024
+#define WINDOW_HEIGHT 512
+
+
+class Fireee: public Entity
 {
 private:
 
 public:
-	Bonus() {};
-	Bonus(sf::Vector2f startingPosition);
-	~Bonus();
-
+	Fireee();
+	~Fireee();
 };

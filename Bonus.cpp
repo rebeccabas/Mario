@@ -6,14 +6,14 @@ Bonus::Bonus(sf::Vector2f startingPosition)
 
 	try
 	{
-		if (!texture.loadFromFile("assets/image/" + file))
+		if (!texture.loadFromFile("assets/" + file))/*, sf::IntRect(0, 0, Height, Width))*/
 		{
 			throw - 1;
 		}
 	}
 	catch (int)
 	{
-		std::cout << "Error: Cannot load Bonus texture.";
+		std::cout << "Error: Cannot load bonus texture.";
 		exit(1);
 	}
 
