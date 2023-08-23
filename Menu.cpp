@@ -1,5 +1,5 @@
 #include "Menu.h"
-
+#include "Windows.h"
 
 Menu::Menu()
 {
@@ -62,6 +62,10 @@ void Menu::followMario(int center)
 
 void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
+	HWND hwnd = window.getSystemHandle();
+
+	SetForegroundWindow(hwnd);
+
 	sf::Texture backgroundTexture;
 	try {
 		if (!backgroundTexture.loadFromFile("assets/image/titlescreen-2.png"))
