@@ -1,6 +1,2 @@
-﻿  main.cpp
-E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'TOP': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
-E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'BOTTOM': macro redefinition
-E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
+﻿  LINK : E:\MarioClone\MarioClone\x64\Debug\Mario.exe not found or not built by the last incremental link; performing full link
   Mario.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe
