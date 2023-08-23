@@ -7,7 +7,7 @@ Game::Game()
 	
 	this->window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Mario");
 
-	map.load("assets/image/map.png", sf::Vector2u(64, 64)); //contains objects for map
+	map.load("assets/image/map-01.png", sf::Vector2u(64, 64)); //contains objects for map
 
 	view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 
@@ -250,7 +250,7 @@ void Game::Menu(int center) //handles controls in menu
 					view.reset(sf::FloatRect(0.f, 0.f, WINDOW_WIDTH, WINDOW_HEIGHT));
 					gameInfo.reset();
 					map.loadArrayFromArray("assets/txt/array.txt");
-					map.load("assets/image/map.png", sf::Vector2u(64, 64));
+					map.load("assets/image/map-01.png", sf::Vector2u(64, 64));
 					menu.setIsON(false);
 				}
 				if (menu.GetPressedItem() == 4)

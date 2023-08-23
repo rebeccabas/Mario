@@ -1,18 +1,6 @@
-﻿  Mario.cpp
-E:\MarioClone\MarioClone\Mario.cpp(71,26): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Mario.cpp(93,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Mario.cpp(114,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\MarioClone\MarioClone\Mario.cpp(294,46): warning C4244: 'return': conversion from 'sf::Int32' to 'float', possible loss of data
+﻿  main.cpp
+E:\MarioClone\MarioClone\Game.h(23,1): warning C4005: 'TOP': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(21,1): message : see previous definition of 'TOP'
+E:\MarioClone\MarioClone\Game.h(24,1): warning C4005: 'BOTTOM': macro redefinition
+E:\MarioClone\MarioClone\tileMap.h(20,1): message : see previous definition of 'BOTTOM'
   Mario.vcxproj -> E:\MarioClone\MarioClone\x64\Debug\Mario.exe

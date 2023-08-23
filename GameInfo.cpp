@@ -52,7 +52,7 @@ void GameInfo::followMario(int center)
 {
 	info[0].setPosition(sf::Vector2f(center - 430, WINDOW_HEIGHT / 20));
 	info[1].setPosition(sf::Vector2f(center - 170, WINDOW_HEIGHT / 20));
-	info[2].setPosition(sf::Vector2f(center + 100, WINDOW_HEIGHT / 20));
+	info[2].setPosition(sf::Vector2f(center + 90, WINDOW_HEIGHT / 20));
 	info[3].setPosition(sf::Vector2f(center + 300, WINDOW_HEIGHT / 20));
 }
 
@@ -187,7 +187,7 @@ void GameInfo::saveResultToFile()
 		std::cerr << "Failed to open coins.txt" << std::endl;
 	}
 	if (coinsFile >> coinsf) {
-		std::cout << "Read coins: " << coinsf << std::endl;
+		std::cout << "Coins: " << coinsf << std::endl;
 	}
 	else {
 		std::cerr << "Failed to read the number from the file." << std::endl;
@@ -200,7 +200,7 @@ void GameInfo::saveResultToFile()
 		std::cerr << "Failed to open time.txt" << std::endl;
 	}
 	if (timeFile >> timef) {
-		std::cout << "Read time: " << timef << std::endl;
+		std::cout << "Time: " << timef << std::endl;
 	}
 	else {
 		std::cerr << "Failed to read the number from the file." << std::endl;
@@ -213,7 +213,7 @@ void GameInfo::saveResultToFile()
 		std::cerr << "Failed to open score.txt" << std::endl;
 	}
 	if (scoreFile >> scoref) {
-		std::cout << "Read score: " << scoref << std::endl;
+		std::cout << "Score: " << scoref << std::endl;
 	}
 	else {
 		std::cerr << "Failed to read the number from the file." << std::endl;
@@ -259,7 +259,7 @@ void GameInfo::typeUserName()
 	std::string userName;
 	std::regex nameTemplate("^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$");
 	system("CLS");
-	std::cout << "Enter your name " << std::endl;
+	std::cout << "Enter your name : " << std::endl;
 
 	while (!correctName)
 	{
