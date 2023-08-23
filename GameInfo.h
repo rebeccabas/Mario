@@ -38,19 +38,19 @@ public:
 	~GameInfo();
 
 	void followMario(int center);
-	void draw(sf::RenderWindow& window, int center);
+	void draw(sf::RenderWindow& window, int center); //draws game info
 	void showLife2();
 	void showLife1();
 	int getLife();
-	void reset();
+	void reset(); //resets game stats
 
 	void increaseCoins();
-	void increaseScoreBonus();
+	void increaseScoreBonus(); 
 	void increaseScoreCoins();
 	void countTime();
 
 
-	void saveResultToFile();
+	void saveResultToFile(); //saves result to file
 
 	std::string properFormat3(int number); // return 3 numbers 3 -> 003, 49 -> 049, 234 -> 234
 	std::string properFormat4(int number); // return 4 numbers 3 -> 0003, 49 -> 0049, 234 -> 0234

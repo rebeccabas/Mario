@@ -46,7 +46,7 @@ public:
 	friend class Game;
 	Mario();
 
-	void update(int mapWidth);
+	void update(int mapWidth); //updates mario's movement
 
 	void killingMove();
 	void goToStart();
@@ -57,11 +57,10 @@ public:
 
 	void setBigMario(bool isBig);
 
-	void dead();
+	void dead(); //handles operation when Mario dies
 
 	float getCurrentTime();
 
 	void fallDown();
-	void drawDeathScreen();
 
 };
