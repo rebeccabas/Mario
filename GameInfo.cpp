@@ -123,7 +123,7 @@ void GameInfo::increaseScoreBonus()
 		std::cerr << "Failed to open the output file." << std::endl;
 	}
 
-	outputFile << score; // Write the value of time to the output file
+	outputFile << score; // Write the value of score to the output file
 	outputFile.close();  // Close the output file
 
 
