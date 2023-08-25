@@ -27,14 +27,14 @@ The game is controlled using Keyboard Arrows. (Up, Down, Left, Right)
   <img width="80%" src="images/gameplay/win.png">
 </p>
 
-#Compiling Instructions:
+### Compiling Instructions:
 
 1. Open Mario.sln (contained in the root folder) in Visual Studio.
 2. Choose the build configuration "Debug" and the target platform "x64".
 3. Build the solution by clicking on the "Build" menu and selecting "Build Solution" (or press Ctrl+Shift+B).
 4. Click on "Local Windows Debugger", or open Mario.exe located at "/x64/Debug".
 
-## Map Manipulation
+### Map Manipulation
 #### The map was created based on template:
 
 <p align="center">
@@ -57,7 +57,7 @@ Available mobs names are: Turtle, Spikey, FlyTur, Bonus.
   <img width="30%" src="images/mobs.png">
 </p>
 
-# Specification:
+### Specification:
 <p align="center">
   <img width="90%" src="images/entities.png">
   <img width="50%" src="images/entities2.png">
