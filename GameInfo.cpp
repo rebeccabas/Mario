@@ -5,7 +5,7 @@
 #define WINDOW_HEIGHT 512
 
 
-GameInfo::GameInfo()
+GameInfo::GameInfo() //initializes text of game info
 {
 	try
 	{
@@ -48,7 +48,7 @@ GameInfo::~GameInfo()
 {
 }
 
-void GameInfo::followMario(int center)
+void GameInfo::followMario(int center) //sets co ordinates of game info to align on center
 {
 	info[0].setPosition(sf::Vector2f(center - 430, WINDOW_HEIGHT / 20));
 	info[1].setPosition(sf::Vector2f(center - 170, WINDOW_HEIGHT / 20));
@@ -66,7 +66,7 @@ void GameInfo::draw(sf::RenderWindow& window, int center)
 	}
 }
 
-void GameInfo::reset()
+void GameInfo::reset() //reset game info for new game
 {
 	coins = 0;
 	time = 0;
@@ -95,7 +95,7 @@ int GameInfo::getLife()
 	return mario.lives;
 }
 
-void GameInfo::increaseCoins()
+void GameInfo::increaseCoins() //increase no of coins
 {
 	coins++;
 
@@ -113,7 +113,7 @@ void GameInfo::increaseCoins()
 	info[0].setString("COINS: " + std::to_string(coins));
 }
 
-void GameInfo::increaseScoreBonus()
+void GameInfo::increaseScoreBonus() //increase score after eating bonus
 {
 	score += 50;
 
@@ -123,14 +123,14 @@ void GameInfo::increaseScoreBonus()
 		std::cerr << "Failed to open the output file." << std::endl;
 	}
 
-	outputFile << score; // Write the value of time to the output file
+	outputFile << score; // Write the value of score to the output file
 	outputFile.close();  // Close the output file
 
 
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
-void GameInfo::increaseScoreCoins()
+void GameInfo::increaseScoreCoins() //scpre after eating coins
 {
 	score += 10;
 
@@ -147,7 +147,7 @@ void GameInfo::increaseScoreCoins()
 	info[1].setString("SCORE: " + std::to_string(score));
 }
 
-void GameInfo::countTime()
+void GameInfo::countTime() //tracks time
 {
 	finish = std::chrono::high_resolution_clock::now();
 	difference = (int)((finish - start).count() / 1000000000);

@@ -63,8 +63,7 @@ void Menu::followMario(int center) //draw menu at mario's position
 void Menu::drawMenuBackground(sf::RenderWindow& window, int center)
 {
 	HWND hwnd = window.getSystemHandle();
-
-	SetForegroundWindow(hwnd);
+	SetForegroundWindow(hwnd); //puts game window on top
 
 	sf::Texture backgroundTexture;
 	try {

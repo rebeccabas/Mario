@@ -230,19 +230,21 @@ void Mario::dead() {
 					std::cout << "Error: Cannot load death background texture.";
 					exit(1);
 				}
-				//display background
+
+				//display death background
 				sf::Sprite spriteBackground;
 				spriteBackground.setTexture(backgroundTexture);
 				spriteBackground.setPosition(0, 0);
 				window.draw(spriteBackground);
 				window.display();
+
 				// check all the window's events that were triggered since the last iteration of the loop
 				sf::Event event;
 
 				if(Keyboard::isKeyPressed(Keyboard::Enter))
 				{
 					HWND hwnd = GetConsoleWindow();
-					SetForegroundWindow(hwnd);
+					SetForegroundWindow(hwnd); //puts console window on top after death
 					
 					gameInfo.saveResultToFile();
 					window.close();
