@@ -25,7 +25,8 @@ void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	target.draw(m_vertices, states);
 }
 
-bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize)
+bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize) 
+//loops through each pixel in tileset image to get vertices of single tile of 64x64
 {
 	this->tileSize = tileSize;
 
@@ -97,12 +98,6 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 									bonus = true;
 								}
 
-								if (Entity.getDestroyMode()) //mario can get in destroy mode and destroy bricks
-								{
-									tiles[i * width + j] = 0;
-									load("assets/image/map-01.png", sf::Vector2u(64, 64));
-								}
-
 								Entity.moveBottom();
 								return 0;
 							case TOP:
@@ -170,7 +165,7 @@ void TileMap::loadArrayFromArray(std::string fileName)
 	}
 	catch (int)
 	{
-		std::cout << "can not open file with map .txt";
+		std::cout << "can not open file with array.txt";
 		exit(1);
 	}
 

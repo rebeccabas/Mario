@@ -5,7 +5,7 @@ Nijiya Maharjan (078BCT052)
 Rubika Bashyal (078BCT068)
 Sadhana Panthi (078BCT069)
 
-Welcome to "Mario", our recreation of the classic platformer games of the Super Mario series.
+Welcome to "Mario", our recreation of the classic platformer games of the Super Mario series. The library we have used is SFML. The library is already included in the project file and no additional setup is required.
 
 Compiling Instructions:
 

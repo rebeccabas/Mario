@@ -1,7 +1,5 @@
 #pragma once
 #define COIN 2
-#define PLANT 5
-#define PLANT2 6
 
 #define COIN_SOUND "assets/sound/coin.wav"
 #define WIN_SOUND "assets/sound/win.wav"

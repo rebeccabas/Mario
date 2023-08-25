@@ -1,156 +1,36 @@
-Wed Aug  3 00:00:36 2023
-Coins: 048 Score: 0345 Time: 037 Rubika
+Thu Aug 24 22:51:13 2023
+Coins: 085 Score: 1150 Time: 087 NIJIYA
 
-Wed Aug  5 00:01:50 2023
-Coins: 064 Score: 0665 Time: 045 Nijiya
+Thu Aug 24 22:52:14 2023
+Coins: 064 Score: 0890 Time: 055 RUBIKA
 
-Wed Aug  3 00:01:50 2023
-Coins: 020 Score: 0120 Time: 045 Rubika
+Thu Aug 24 22:52:59 2023
+Coins: 053 Score: 0780 Time: 041 SADHANA
 
-Sat Aug  8 22:41:41 2023
-Coins: 051 Score: 0555 Time: 041 Rubika
+Fri Aug 25 10:04:24 2023
+Coins: 029 Score: 0340 Time: 040 jhdjfh
 
-Sat Aug 8 22:43:18 2023
-Coins: 047 Score: 0505 Time: 033 Sadhana
+Fri Aug 25 10:51:11 2023
+Coins: 003 Score: 0030 Time: 037 nijiya
 
-Sat Aug  8 22:45:24 2023
-Coins: 046 Score: 0325 Time: 037 Rubika
+Fri Aug 25 10:51:45 2023
+Coins: 009 Score: 0190 Time: 025 nijiya
 
-Sat Aug  8 22:47:00 2023
-Coins: 045 Score: 0350 Time: 040 Sadhana
+Fri Aug 25 10:52:40 2023
+Coins: 036 Score: 0560 Time: 052 niji
 
-Sat Aug  8 22:48:48 2023
-Coins: 048 Score: 0345 Time: 037 Nijiya
+Fri Aug 25 10:56:03 2023
+Coins: 008 Score: 0180 Time: 027 hihi
 
-Sat Aug  8 22:52:31 2023
-Coins: 042 Score: 0295 Time: 035 Nijiya
+Fri Aug 25 12:15:50 2023
+Coins: 008 Score: 0180 Time: 047 nijiya
 
-Sat Aug  8 23:05:16 2023
-Coins: 045 Score: 0395 Time: 031 Sadhana
+Fri Aug 25 12:16:41 2023
+Coins: 035 Score: 0500 Time: 047 nijiya
 
-Wed Aug 23 01:42:51 2023
-Coins: 006 Score: 0000 Time: 000 coinsbeingwritten
+Fri Aug 25 12:38:22 2023
+Coins: 009 Score: 0190 Time: 030 nijiya
 
-Wed Aug 23 01:46:49 2023
-Coins: 006 Score: 0000 Time: 010 time
-
-Wed Aug 23 01:52:18 2023
-Coins: 006 Score: 0110 Time: 011 chalyoabasurely
-
-Wed Aug 23 01:55:00 2023
-Coins: 017 Score: 0270 Time: 035 doeseverythingwork
-
-Wed Aug 23 13:24:13 2023
-Coins: 006 Score: 0060 Time: 009 lolol
-
-Wed Aug 23 13:50:42 2023
-Coins: 003 Score: 0030 Time: 013 nijiy
-
-Wed Aug 23 13:53:37 2023
-Coins: 003 Score: 0030 Time: 006 niji
-
-Wed Aug 23 13:59:56 2023
-Coins: 003 Score: 0030 Time: 006 nijiya
-
-Wed Aug 23 14:01:40 2023
-Coins: 003 Score: 0030 Time: 006 niji
-
-Wed Aug 23 14:06:32 2023
-Coins: 003 Score: 0030 Time: 015 nijiya
-
-Wed Aug 23 14:11:28 2023
-Coins: 003 Score: 0030 Time: 005 nijia
-
-Wed Aug 23 14:13:22 2023
-Coins: 003 Score: 0030 Time: 005 nijiya
-
-Wed Aug 23 14:20:14 2023
-Coins: 003 Score: 0030 Time: 005 snnsn
-
-Wed Aug 23 14:20:24 2023
-Coins: 003 Score: 0030 Time: 004 aaaa
-
-Wed Aug 23 14:21:30 2023
-Coins: 003 Score: 0030 Time: 005 ssssss
-
-Wed Aug 23 14:27:00 2023
-Coins: 003 Score: 0030 Time: 005 nnnnd
-
-Wed Aug 23 14:28:16 2023
-Coins: 003 Score: 0030 Time: 005 nnnn
-
-Wed Aug 23 14:30:24 2023
-Coins: 003 Score: 0030 Time: 005 nijiya
-
-Wed Aug 23 14:34:56 2023
-Coins: 006 Score: 0160 Time: 011 nijiya
-
-Wed Aug 23 14:37:32 2023
-Coins: 003 Score: 0030 Time: 020 nijiya
-
-Wed Aug 23 16:21:14 2023
-Coins: 006 Score: 0110 Time: 027 nijiya
-
-Wed Aug 23 16:27:42 2023
-Coins: 003 Score: 0030 Time: 006 nni
-
-Wed Aug 23 16:29:22 2023
-Coins: 004 Score: 0090 Time: 013 niji
-
-Wed Aug 23 16:29:46 2023
-Coins: 006 Score: 0110 Time: 018 niji
-
-Wed Aug 23 16:30:29 2023
-Coins: 006 Score: 0210 Time: 038 nji
-
-Wed Aug 23 16:52:13 2023
-Coins: 063 Score: 0780 Time: 060 niji
-
-Wed Aug 23 17:00:03 2023
-Coins: 055 Score: 0800 Time: 094 niji
-
-Wed Aug 23 17:02:27 2023
-Coins: 040 Score: 0500 Time: 032 niji
-
-Wed Aug 23 22:37:28 2023
-Coins: 009 Score: 0140 Time: 009 niji
-
-Wed Aug 23 22:41:29 2023
-Coins: 009 Score: 0190 Time: 016 aaaaaaaaaa
-
-Wed Aug 23 22:43:00 2023
-Coins: 059 Score: 0840 Time: 087 ssss
-
-Wed Aug 23 22:44:12 2023
-Coins: 006 Score: 0110 Time: 010 aaaa
-
-Wed Aug 23 23:00:13 2023
-Coins: 065 Score: 0950 Time: 140 niji
-
-Wed Aug 23 23:00:23 2023
-Coins: 003 Score: 0030 Time: 005 nnnnnnn
-
-Wed Aug 23 23:38:51 2023
-Coins: 078 Score: 1030 Time: 050 nnnn
-
-Wed Aug 23 23:57:46 2023
-Coins: 002 Score: 0020 Time: 005 niji
-
-Wed Aug 23 23:58:18 2023
-Coins: 003 Score: 0030 Time: 005 aaaa
-
-Thu Aug 24 11:03:25 2023
-Coins: 006 Score: 0110 Time: 047 ni
-
-Thu Aug 24 11:31:54 2023
-Coins: 006 Score: 0060 Time: 012 vv
-
-Thu Aug 24 17:02:24 2023
-Coins: 068 Score: 0880 Time: 054 nijia
-
-Thu Aug 24 17:07:04 2023
-Coins: 055 Score: 0800 Time: 107 aaa
-
-Thu Aug 24 17:07:53 2023
-Coins: 044 Score: 0640 Time: 045 aaaa
+Fri Aug 25 12:39:14 2023
+Coins: 038 Score: 0530 Time: 048 nijiya
 

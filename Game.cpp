@@ -29,7 +29,7 @@ void Game::intersection(Mario& mario, Entity& entity) //handle collision of mari
 {
 	Bonus b;
 	if (entity.getIsAlive()) {
-		if (mario.getSprite().getGlobalBounds().intersects(entity.getSprite().getGlobalBounds()))
+		if (mario.getSprite().getGlobalBounds().intersects(entity.getSprite().getGlobalBounds())) //if mario intersects mob
 			if (entity.getIsFriendly())	//if entity is friendly mario collects it
 			{
 				entity.dead();
@@ -39,13 +39,14 @@ void Game::intersection(Mario& mario, Entity& entity) //handle collision of mari
 			}
 			else //if entity is not friendly
 			{
-				if (abs(mario.bottom() - entity.top()) < 10 && abs(mario.left() - entity.left()) < 54 && entity.isKillable())	//mario jumped on the entity, entity dies
+				if (abs(mario.bottom() - entity.top()) < 10 && abs(mario.left() - entity.left()) < 54 && entity.isKillable())	
+					//mario jumped on the entity, entity dies
 				{
 					if (mario.getIsAlive())
 					{
 						mario.killingMove();
 						entity.dead();
-						stompBuffer.loadFromFile(STOMP_SOUND);
+						stompBuffer.loadFromFile(STOMP_SOUND); 
 						stompSound.setBuffer(stompBuffer);
 						stompSound.play();
 						gameInfo.increaseScoreBonus();
@@ -123,7 +124,7 @@ void Game::update()
 	}
 
 	int marioHit = map.collision(mario, gameInfo); //checks what mario is touching
-	map.collision(mario, gameInfo);
+	
 	if (marioHit == BOTTOM)	//if mario is on the ground he can jump
 	{
 		mario.setCanJump(true);
@@ -173,12 +174,12 @@ void Game::render() //draws maps, mobs and handles view
 	menu.followMario(mario.getPosition().x);
 	gameInfo.draw(*window, view.getCenter().x);
 
-	if (mario.getIsAlive())
+	if (mario.getIsAlive()) //draws mario
 		window->draw(mario);
 
 	drawMobs();
 
-	cameraMovement();
+	cameraMovement(); //handles current game view
 
 	window->setView(view);
 	this->window->display();
@@ -269,10 +270,10 @@ void Game::run() //starts game
 	while (this->window->isOpen())
 	{
 		if (menu.isON())
-			Menu(view.getCenter().x);
+			Menu(view.getCenter().x); //draws menu
 		else {
-			this->update();
-			this->render();
+			this->update(); //handles pause, exit, collision
+			this->render(); //draws map, mobs, game info
 			gameInfo.countTime();
 		}
 	}
@@ -366,6 +367,8 @@ void Game::addMobs()
 
 			wsk->setPosition({ x, y });
 			mobs.push_back(*wsk);
+			//This line of code adds a copy of the object pointed to by wsk to the mobs vector. 
+		//The push_back function is a method available for vectors, and it adds a new element to the end of the vector.
 		}
 	}
 
