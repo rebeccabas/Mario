@@ -61,11 +61,12 @@ Available mobs names are: Turtle, Spikey, FlyTur, Bonus.
 
 
 <p align="center">
-  Game Flow
-  <img width="90%" src="images/gameflow.png">
+  <b>Game Flow</b><br><br>
+  <img width="90%" src="images/gameflow.png"><br><br>
+</p>
 
-  
-  Code Structure
+<p align="center">  
+  <b>Code Structure</b><br><br>
   <img width="90%" src="images/code_structure.png">
 </p>
 
